@@ -1,7 +1,13 @@
-import { Inter } from "next/font/google";
+import { Signika } from "next/font/google";
 import "./globals.css";
+import Image from "next/image"; 
+import Link from "next/link";
 
-const inter = Inter({ subsets: ["latin"] });
+const signika = Signika({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-signika'
+})
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +17,34 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={signika.className}>
+        <header>
+          <div className='bg-white flex h-40 w-full text-[#000000] align-middle rounded-b-[45px] justify-between'>
+            <Link href={'/'}> 
+              <Image
+                src="/primary-logo-2-tone.png"
+                width={196}
+                height={196}
+                alt="Terra Segara"
+              />
+            </Link>
+            <div className="my-auto gap-16 flex mx-10 text-[34px] text-secondary">
+              <Link href={'about-us'}>About Us</Link>
+              <Link href={'project'}>Project</Link>
+              <Link href={'join-us'}>Join Us</Link>
+              <Link href={'donate'}>Donate</Link>
+              <Link href={'gallery'}>Gallery</Link>
+            </div> 
+          </div>
+        </header>
+        {children}
+        <footer>
+          <div className="bg-primary " style={{textAlign: 'center', height: '580px', width: '100%', backgroundColor: '#b75444', color: 'black', paddingBlock: 'auto'}}>
+            This is footer
+          </div>
+        </footer>
+      </body>
+      
     </html>
   );
 }
