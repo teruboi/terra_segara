@@ -3,29 +3,40 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
-  const [path, setPath] = useState('')  
-    
-  useEffect(() =>{
-    if (window !== undefined){
-      setPath(window.location.pathname)
-    }
+  const [scrollY, setScrollY] = useState(0)
+  const pathname = usePathname()
+  console.log(pathname);
 
+  let navbarClass;
+
+  useEffect(() =>{
     let prevScrollPos = window.scrollY;
-      window.onscroll = function() {
-          let currScrollPos = window.scrollY
-          if (prevScrollPos > currScrollPos) {
-            document.getElementById("navbar").style.top = "0";
-          } else {
-            document.getElementById("navbar").style.top = "-100%";
-          }
-          prevScrollPos = currScrollPos;
+    window.onscroll = function() {
+      let currScrollPos = window.scrollY
+        if (prevScrollPos > currScrollPos) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-100%";
+        }
+        prevScrollPos = currScrollPos;
       }
+
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   });
 
   return(
-      <div id="navbar" className={`${() => {path === '/' ? 'bg-opacity-0' : 'bg-white'}} bg-white fixed top-0 transition-all ease-in-out flex h-40 w-full text-[#000000] align-middle rounded-b-[45px] justify-between`}>
+      <div id="navbar" className={`${pathname === '/' && scrollY <= 0 ? 'bg-opacity-0' : 'bg-white'} fixed top-0 transition-all ease-in-out flex h-40 w-full text-[#000000] align-middle rounded-b-[45px] justify-between`}>
           <Link href={'/'}> 
             <Image
               src="/primary-logo-2-tone.png"
