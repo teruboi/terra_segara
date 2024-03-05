@@ -8,9 +8,7 @@ import { usePathname } from "next/navigation";
 export default function Navbar() {
   const [scrollY, setScrollY] = useState(0)
   const pathname = usePathname()
-  console.log(pathname);
-
-  let navbarClass;
+  // console.log(pathname);
 
   useEffect(() =>{
     let prevScrollPos = window.scrollY;

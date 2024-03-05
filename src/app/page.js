@@ -1,4 +1,5 @@
 //Landing Page
+import ButtonDefault from "@/components/Button";
 import Image from "next/image";
 
 export const metadata = {
@@ -9,7 +10,7 @@ export const metadata = {
 export default function LandingPage() {
   return (
     <>
-      <div className="w-full h-[1020px] bg-gradient-to-t from-white to-20%">
+      <div className="w-fit h-fit bg-gradient-to-t from-white to-20%">
         <div>
           <Image
           src={'/home-hero.png'}
@@ -17,7 +18,7 @@ export default function LandingPage() {
           height={1020}
           className="relative -z-20 bg-secondary bg-opacity-20"
           style={{
-            objectFit: "contain"
+            objectFit: "fill"
           }}
         />
         
@@ -29,10 +30,23 @@ export default function LandingPage() {
         </div>
       </div>
         
-      <div className="w-full h-[1020px] bg-white text-secondary">
-          <h1 className="">About Us</h1>
-          <h1 className="">Welcome to Our Page</h1>  
-
+      <div className="w-full h-fit bg-white text-secondary pt-16 pb-32">
+        <h1 className="text-center text-[2.75rem]">About Us</h1>
+        <h1 className="text-center text-[5.25rem] font-bold">Welcome to Our Page</h1>  
+        <div className="grid grid-flow-col grid-cols-3">
+          <div className="flex flex-col justify-center">
+            <Image src={'/images.png'} width={585} height={585}/>
+            <ButtonDefault url={'/about-us'} text={'Who are we?'}/>
+          </div>
+          <div className="flex flex-col justify-center">
+            <Image src={'/images.png'} width={585} height={585}/>
+            <ButtonDefault url={'/about-us'} text={'What we do?'}/>
+          </div>
+          <div className="flex flex-col justify-center">
+            <Image src={'/images.png'} width={585} height={585}/>
+            <ButtonDefault url={'/about-us'} text={'How do we work?'}/>
+          </div>
+        </div>  
       </div>
       <div className="w-full h-[1020px] bg-gradient-to-b from-white via-secondary to-white">
         
