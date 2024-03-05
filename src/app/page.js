@@ -29,10 +29,10 @@ export default function LandingPage() {
         </div>
       </div>
         
-      <div className="w-full h-[1020px] bg-white">
-          <h1>About Us</h1>
-          <h1>Welcome to Our Page</h1>
-          
+      <div className="w-full h-[1020px] bg-white text-secondary">
+          <h1 className="">About Us</h1>
+          <h1 className="">Welcome to Our Page</h1>  
+
       </div>
       <div className="w-full h-[1020px] bg-gradient-to-b from-white via-secondary to-white">
         
