@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
   
   return (
     <html lang="en">
-      <body className={signika.className}>
+      <body className={`${signika.className} max-w-[1920px] w-full block mx-auto bg-gradient-to-b from-white to-white`}>
           <header>
             <Navbar />
           </header>

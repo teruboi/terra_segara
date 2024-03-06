@@ -22,7 +22,7 @@ export default function LandingPage() {
           }}
         />
         
-          <div className="absolute -z-10 top-1/3 left-24"> 
+          <div className="absolute -z-10 top-1/3 left-24 max-w-[1920px]"> 
             <p className="text-[140px] font-normal">Be Part Of</p>
             <p className="text-[140px] font-bold -mt-24">A Change.</p>
             <p className="text-[50px] font-normal -mt-6">Educate, Preserve,  Conserve.</p>
@@ -34,22 +34,27 @@ export default function LandingPage() {
         <h1 className="text-center text-[2.75rem]">About Us</h1>
         <h1 className="text-center text-[5.25rem] font-bold">Welcome to Our Page</h1>  
         <div className="grid grid-flow-col grid-cols-3">
-          <div className="flex flex-col justify-center">
-            <Image src={'/images.png'} width={585} height={585}/>
-            <ButtonDefault url={'/about-us'} text={'Who are we?'}/>
+          <div className="grid justify-center">
+            <Image src={'/images.png'} width={585} height={585} style={{objectFit: 'contain', margin: 'auto'}}/>
+            <ButtonDefault url={'/about-us'} text={'Who are we?'} variant={1}/>
           </div>
-          <div className="flex flex-col justify-center">
+          <div className="grid justify-center">
             <Image src={'/images.png'} width={585} height={585}/>
-            <ButtonDefault url={'/about-us'} text={'What we do?'}/>
+            <ButtonDefault url={'/about-us'} text={'What we do?'} variant={1}/>
           </div>
-          <div className="flex flex-col justify-center">
+          <div className="grid justify-center">
             <Image src={'/images.png'} width={585} height={585}/>
-            <ButtonDefault url={'/about-us'} text={'How do we work?'}/>
+            <ButtonDefault url={'/about-us'} text={'How do we work?'} variant={1}/>
           </div>
         </div>  
       </div>
-      <div className="w-full h-[1020px] bg-gradient-to-b from-white via-secondary to-white">
-        
+      <div className="w-full h-[1020px] bg-gradient-to-b from-white via-secondary to-white grid grid-cols-3">
+        <button className="w-[432px] h-[733px] rounded-[45px] bg-primary drop-shadow-md focus:drop-shadow-2xl transition-all">
+          <Image />
+          <h1>Vision</h1>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+          <ButtonDefault url={'/'} text={'See More'} variant={3}/>
+        </button>
       </div>
       <div className="w-full h-[1020px] bg-white">
 
