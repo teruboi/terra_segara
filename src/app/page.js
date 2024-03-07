@@ -48,13 +48,15 @@ export default function LandingPage() {
           </div>
         </div>  
       </div>
-      <div className="w-full h-[1020px] bg-gradient-to-b from-white via-secondary to-white grid grid-cols-3">
-        <button className="w-[432px] h-[733px] rounded-[45px] bg-primary drop-shadow-md focus:drop-shadow-2xl transition-all">
-          <Image />
-          <h1>Vision</h1>
-          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
-          <ButtonDefault url={'/'} text={'See More'} variant={3}/>
-        </button>
+      <div className="w-full h-[1020px] bg-gradient-to-b from-white via-secondary to-white grid justify-center">
+        <div className="w-[432px] h-[733px] rounded-[45px] flex flex-col justify-between drop-shadow-md hover:drop-shadow-2xl transition-all p-10">
+          <Image src={'/images.png'} width={432} height={733} />
+          <div className="text-center text-[100px] font-bold">Vision</div>
+          <div className="rounded-[45px] text-center">
+            <p className="text-base text-center">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+            <ButtonDefault url={'/'} text={'See More'} variant={3}/>
+          </div>
+        </div>
       </div>
       <div className="w-full h-[1020px] bg-white">
 
