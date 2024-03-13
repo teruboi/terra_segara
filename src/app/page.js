@@ -55,7 +55,7 @@ export default function LandingPage() {
         </div>  
       </div>
       <div className="w-full h-[1020px] bg-gradient-to-b from-white via-secondary to-white grid grid-flow-col gap-20 justify-center items-center">
-        <div className="group w-[432px] h-[733px] rounded-[45px] drop-shadow-md hover:drop-shadow-2xl hover:w-[489px] hover:h-[832px] transition-all -z-0" style={{backgroundImage:"url('Vision.png')", backgroundPosition:'center', backgroundRepeat:'no-repeat', backgroundSize:'cover'}}>
+        <div className="group w-[432px] h-[733px] rounded-[45px] drop-shadow-md hover:drop-shadow-2xl hover:w-[489px] hover:h-[832px] transition-all -z-0 " style={{backgroundImage:"url('Vision.png')", backgroundPosition:'center', backgroundRepeat:'no-repeat', backgroundSize:'cover'}}>
           <div className="w-[98%] left-1 h-full top-2 -z-0 absolute rounded-[43px] group-hover:bg-gradient-to-b from-secondary/70 to-50% transition-all"/>
           <div className="text-center text-[100px] font-bold relative top-0">Vision</div>
           <div className="transition-all rounded-[45px] text-center relative top-[340px] group-hover:top-[400px] flex flex-col justify-between">
@@ -85,9 +85,9 @@ export default function LandingPage() {
           src={'/Object-graphic3 1.png'}
           width={895*0.5}
           height={364*0.5}
-          className="absolute -bottom-[235%] left-0"
+          className="absolute -bottom-[240%] left-0"
         />
-
+        <h1 className="text-secondary text-[84px] font-bold text-center">Our Work</h1>
       </div>
     </>
   );
