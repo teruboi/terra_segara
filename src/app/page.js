@@ -1,5 +1,6 @@
 //Landing Page
 import ButtonDefault from "@/components/Button";
+import SliderHome from "@/components/SliderHome";
 import Image from "next/image";
 
 export const metadata = {
@@ -87,6 +88,7 @@ export default function LandingPage() {
           height={364*0.5}
           className="absolute -bottom-[240%] left-0"
         />
+        <SliderHome />
         <h1 className="text-secondary text-[84px] font-bold text-center">Our Work</h1>
       </div>
     </>
