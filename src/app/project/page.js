@@ -1,11 +1,13 @@
 import Image from "next/image";
 
-export default function AboutUs() {
+export default function Project() {
     return(
         <>
         <div className="max-w-[1920px] max-h-[1080px] w-screen h-screen" style={{backgroundImage:'url(about-us-hero.png)', backgroundRepeat:'no-repeat'}}>
-            <div className="w-full h-full bg-gradient-to-t from-white from-10% to-40% text-center text-secondary text-[140px] font-bold grid content-end">
-                About Us
+            <div className="w-full h-full bg-gradient-to-t from-secondary from-10% to-40% text-white text-[140px] font-bold grid grid-cols-3 content-end px-10">
+                <div className="col-span-1">Projects</div>
+                <div className="col-span-2 bg-white w-[288px] h-[5px]" />
+                Our Work.
             </div>
         </div>
         <div className="max-w-[1920px] w-screen h-fit py-12 text-center text-secondary text-[42px]">

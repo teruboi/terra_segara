@@ -34,7 +34,7 @@ export default function Navbar() {
   });
 
   return(
-      <div id="navbar" className={`${pathname === '/' && scrollY <= 0 ? 'bg-opacity-0' : 'bg-white'} max-w-[1920px] fixed top-0 transition-all ease-in-out flex h-40 w-full text-[#000000] align-middle rounded-b-[45px] justify-between z-10`}>
+      <div id="navbar" className={`${pathname === '/' && scrollY <= 0 ? 'bg-opacity-0' : 'bg-white'} max-w-[1920px] fixed top-0 transition-all ease-in-out flex h-40 w-full text-[#000000] align-middle rounded-b-[45px] justify-between z-10 shadow-xl`}>
           <Link href={'/'}> 
             <Image
               src="/primary-logo-2-tone.png"

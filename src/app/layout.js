@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
   
   return (
     <html lang="en">
-      <body className={`${signika.className} max-w-[1920px] w-full block mx-auto bg-gradient-to-b from-white to-white`}>
+      <body className={`${signika.className} max-w-[1920px] w-full block mx-auto bg-gradient-to-b from-white to-white overflow-x-hidden`}>
           <header>
             <Navbar />
           </header>
@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
           </footer>
           <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"></link>
           <script>
-            new Glide(".glide").mount()
+            new Glide('.glide').mount()
           </script>
       </body>
     </html>
