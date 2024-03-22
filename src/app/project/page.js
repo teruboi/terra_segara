@@ -1,50 +1,42 @@
 import Image from "next/image";
+import WorkProject from "@/components/WorkProject";
+
+const example = {
+    title: 'Empowering Local Youth through SCUBA Dive Training Scholarship - Batch 1/2024',
+    article: 
+        <>
+            <p>
+            Backgorund: Nusa Penida is a district located in the southeast part of Bali island. It consists of three islands of Nusa Penida, Nusa Lembongan, and Nusa Ceningan. The islands' diving industry is internationally recognized due to its locally unique currents' condition, situated in the coral triangle area, and is home for megafauna such as manta rays and sunfish or Mola-mola. In 2020, Nusa Penida alone had 22 registered scuba diving businesses and around 30 more in Nusa Ceningan and Lembongan. Most of the dive operators employ foreigners to work as instructors or divemasters as it is difficult to find locals.
+            <br/><br/>
+            Among the locals, only few females are found to work in diving and snorkeling and most of them are coming from the island of Java or Lombok. Additionally, Nusa Penida has a growing number of conservation communities from locally initiated groups of Nuansa Pulau to globally organized Coral Triangle Center. However, the number of locals, not to mention local women, represented in conservation activities is low to non-existent. These findings, we assume, show that there is a linear correlation in locals' involvement in scuba diving and conservation effort.
+            <br/><br/>
+            <Image />
+            <br/>
+            Objective: We believe that locals play imperative roles in educating, preserving, and conserving the island they call home. Thus, they need adequate knowledge and skills to do so. However, with their current skills set, they will require further capacity building particularly in diving skills and knowledge. The training provided will also prepare them to enter the diving industry and further to conservation activities.
+            </p>
+        </>,
+    date: new Date('01-07-2024')
+    
+}
 
 export default function Project() {
     return(
         <>
-        <div className="max-w-[1920px] max-h-[1080px] w-screen h-screen" style={{backgroundImage:'url(about-us-hero.png)', backgroundRepeat:'no-repeat'}}>
-            <div className="w-full h-full bg-gradient-to-t from-secondary from-10% to-40% text-white text-[140px] font-bold grid grid-cols-3 content-end px-10">
-                <div className="col-span-1">Projects</div>
-                <div className="col-span-2 bg-white w-[288px] h-[5px]" />
-                Our Work.
+        <div className="max-w-[1920px] max-h-[1080px] w-screen h-screen bg-no-repeat bg-cover" style={{backgroundImage:'url(images/projects-hero.png)'}}>
+            <div className="w-full h-full text-white text-[140px] flex flex-row font-bold justify-start items-end">
+                <p className="relative left-28 bottom-20">
+                    <span className="text-[100px] font-normal inline-flex items-center gap-x-10">
+                        Projects <div className="w-[228px] h-1 bg-white"/>
+                    </span>
+                    <br />
+                    <div className="-mt-20">
+                        Our Work.
+                    </div>
+                </p>
             </div>
         </div>
-        <div className="max-w-[1920px] w-screen h-fit py-12 text-center text-secondary text-[42px]">
-            <h1 className="text-6xl font-bold">Who Are We?</h1>
-            <br />
-            Yayasan Terra Segara Indonesia (YTSI) is a non-profit organization based in Nusa Penida, Bali.<br />
-            Its name is derived from the Sanskrit words "Terra'' which means land and "Segara'' which<br />
-            means sea. Our first point of departure is we believe that the dynamics of land, sea, and the<br />
-            people—all constituent parts of the earth—impact one another as a single, interconnected<br />
-            whole. Thus, as a responsible human being we have the prominent responsibility to maintain<br />
-            the balance between the two. The founders of YTSI are all diving instructors whom have been<br />
-            living and working in Nusa Penida Marine Protected Area (MPA) for more than five years.<br />
-        </div>
-        <div className="max-w-[1920px] w-screen h-fit py-12 text-center text-secondary text-[42px]">
-            <h1 className="text-6xl font-bold">Founder</h1>
-        </div>
-        <div className="max-w-[1920px] w-screen h-fit py-12 text-center text-secondary text-[42px]">
-            <h1 className="text-6xl font-bold mb-12">What we do?</h1>
-            <Image className="mb-12"/>
-            We are eager to solve coral degradation and ocean plastic pollution problems<br />around the island. However, our main objective is to spread our eagerness<br />to everyone and work together in any ways we can. These problems may or may not<br />contribute to climate action but we are working towards grounding the notion of<br />climate change and action in a more profound yet practical way. Climate change is<br />indeed a global issue yet it needs to be addressed locally from our closest proximity.<br />Which is why we bring the concept of cultural preservation, a way in which climate<br />action can be pursued in a culturally appropriate and convenient way.
-        </div>
-        <div className="max-w-[1920px] w-screen h-fit py-12 text-center text-secondary text-[42px] mb-10">
-            <h1 className="text-6xl font-bold mb-12">How do we work?</h1>
-            <Image className="mb-12"/>
-            To achieve our main objective we propose three agendas of <b>educate, preserve, and conserve.</b><br /><br />
-            <ol className="list-decimal list-outside text-secondary ml-10">
-                <li className="text-left ml-36">
-                    Educate: Climate change issues need to be informed through formal, informal, and non-<br/>formal education. Scuba Dive training for example, can provide non-formal education to<br/>inform climate change adaptation through hands-on experience and a fun way.                    
-                </li>
-                <li className="text-left ml-36">
-                    Preserve: Inasmuch as climate change is an environmental issue, its adaptation is a social<br/>and cultural issue. Addressing climate change adaptation thus needs to be done through<br/>preserving culture by acknowledging local wisdom or knowledge.
-                </li>
-                <li className="text-left ml-36">
-                    Conserve: Education and preservation can increase people's awareness of the climate<br/>change issue and adaptation which lead them to the act of conserving nature and culture.
-                </li>
-            </ol><br />
-            The three agendas are fluid and subject to change as we work on a participatory<br />research basis. This means, Nusa Penida people know better than us the 'expert', thus<br />our point of departure is their local knowledge and wisdom, instead of ours.
+        <div className="max-w-[1920px] w-screen h-fit py-24 px-24">
+            <WorkProject props={example}/>
         </div>
         </>
     )
