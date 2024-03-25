@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export default function ButtonDefault({ text, url, variant }) {
-    let button = 'h-fit w-fit px-10 py-1 text-[34px] text-white rounded-[32px] transition-all mx-auto my-5'
+    let button = 'min-w-[220px] max-h-[60px] h-fit w-fit px-10 py-1 text-[34px] text-white text-center rounded-[32px] transition-all mx-auto my-5'
     if (variant !== null){
         switch (variant) {
             case 1:
