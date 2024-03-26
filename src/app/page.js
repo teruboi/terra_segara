@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 export const metadata = {
-  title: "Terra Segara || Home",
+  title: "Terra Segara - Coming Soon",
   description: "Terra Segara website"
 }
 
