@@ -10,8 +10,14 @@ const nextConfig = {
             hostname: 'ui-avatars.com',
             port: '',
             pathname: '/api/**'
-          }
-        ]
+          },
+          {
+            protocol:'https',
+            hostname:'terra-segara-asset.s3.ap-southeast-2.amazonaws.com',
+            port: '',
+            pathname: '/**'
+          },
+        ],
       },
 };
 

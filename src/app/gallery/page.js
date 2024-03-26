@@ -11,7 +11,12 @@ export default function Gallery(){
                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.”
                     </p>
                 </div>
-                <Image />
+                <Image
+                    src={'https://terra-segara-asset.s3.ap-southeast-2.amazonaws.com/Website+Asset/IMG_5459+1.png'}
+                    width={800}
+                    height={800}
+                    className='rounded-bl-[200px] relative -bottom-20'
+                />
             </div>
         </>
     )
