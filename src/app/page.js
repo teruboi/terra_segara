@@ -14,7 +14,7 @@ export default function LandingPage() {
         height={600}
         objectFit="cover"
         className="absolute -top-20"
-        quality={10}
+        quality={50}
       />
       <Image
         src={'/Object-graphic6 1.png'}
@@ -22,7 +22,7 @@ export default function LandingPage() {
         height={300}
         objectFit="cover"
         className="absolute bottom-20 right-0"
-        quality={10}
+        quality={50}
       />
       <div className="h-screen w-screen bg-white text-secondary text-center flex flex-col justify-center items-center text-8xl font-semibold gap-4">
         <p className="z-10">Coming Soon!</p>
