@@ -24,10 +24,8 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/Logo Initial (two tone).ico" sizes="any" />
       </head>
-      <body className={`${signika.className} max-w-[1920px] w-full block mx-auto bg-gradient-to-b from-white to-white overflow-x-hidden`}>
-          <header>
-            <Navbar />
-          </header>
+      <body className={`${signika.className} max-w-full flex flex-col items-center mx-auto bg-gradient-to-b from-white to-white overflow-x-hidden`}>
+          <Navbar />
           {children}
           <footer>
             <Footer />

@@ -22,17 +22,24 @@ const example = {
 export default function Project() {
     return(
         <>
-        <div className="max-w-[1920px] max-h-[1080px] w-screen h-screen bg-no-repeat bg-cover" style={{backgroundImage:'url(images/projects-hero.png)'}}>
-            <div className="w-full h-full text-white text-[140px] flex flex-row font-bold justify-start items-end">
-                <p className="relative left-28 bottom-20">
-                    <span className="text-[100px] font-normal inline-flex items-center gap-x-10">
+        <div className="max-w-[1920px] max-h-[1080px] w-screen h-screen bg-no-repeat bg-cover">
+            <Image
+                src={'/images/projects-hero.png'}
+                width={1920}
+                height={1080}
+                alt="hero project"
+                placeholder="blur"
+                blurDataURL="/images/projects-hero-small.png"
+            />
+            <div className="absolute bottom-96 w-full h-full text-white text-[140px] flex flex-row font-bold justify-start items-end">
+                <div className="relative left-28 bottom-20 flex flex-col">
+                    <div className="text-[100px] font-normal inline-flex items-center gap-x-10">
                         Projects <div className="w-[228px] h-1 bg-white"/>
-                    </span>
-                    <br />
-                    <div className="-mt-20">
+                    </div>
+                    <div className="-mt-10">
                         Our Work.
                     </div>
-                </p>
+                </div>
             </div>
         </div>
         <div className="max-w-[1920px] w-screen h-fit py-24 px-24">

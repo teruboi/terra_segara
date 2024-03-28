@@ -3,8 +3,8 @@ import Image from "next/image";
 export default function AboutUs() {
     return(
         <>
-        <div className="max-w-[1920px] max-h-[1080px] w-screen h-screen bg-no-repeat bg-cover" style={{backgroundImage:'url(images/about-us-hero.png)'}}>
-            <div className="w-full h-full bg-gradient-to-t from-white to-40% text-center text-secondary text-[140px] font-bold grid content-end">
+        <div className="max-w-full w-screen h-screen bg-no-repeat bg-cover" style={{backgroundImage:'url(images/about-us-hero.png)'}}>
+            <div className="absolute w-full h-full bg-gradient-to-t from-white to-40% text-center text-secondary text-[140px] font-bold grid content-end">
                 About Us
             </div>
         </div>

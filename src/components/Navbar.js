@@ -34,21 +34,22 @@ export default function Navbar() {
   });
 
   return(
-      <div id="navbar" className={`${pathname === '/' && scrollY <= 0 ? 'bg-opacity-0' : 'bg-white shadow-xl'} max-w-[1920px] fixed top-0 transition-all ease-in-out flex h-40 w-full text-[#000000] align-middle rounded-b-[45px] justify-between z-10`}>
+      <div id="navbar" className={`${(pathname === '/project' || pathname === '/gallery') && scrollY <= 0 ? 'text-white ' : 'text-secondary'} ${scrollY <= 0 ? 'bg-opacity-0' : 'bg-opacity-100 shadow-xl'} bg-white fixed top-0 transition-all ease-in-out flex h-fit w-full align-middle rounded-b-[45px] justify-between z-50 items-center`}>
           <Link href={'/'}> 
             <Image
-              src="/primary-logo-2-tone.png"
-              width={196}
-              height={196}
+              src={(pathname === '/project' || pathname === '/gallery') && scrollY <= 0 ? "/Primary Logo (white).png" : "/primary-logo-2-tone.png"}
+              width={160}
+              height={160}
               alt="Terra Segara"
+              className={`object-cover ${(pathname === '/project' || pathname === '/gallery') && scrollY <= 0 ? '-translate-y-4' : ''}`}
             />
           </Link>
-          <div className="my-auto gap-16 flex mx-10 text-[34px] text-secondary">
-            <Link href={'about-us'}>About Us</Link>
-            <Link href={'project'}>Project</Link>
-            <Link href={'join-us'}>Join Us</Link>
-            <Link href={'donate'}>Donate</Link>
-            <Link href={'gallery'}>Gallery</Link>
+          <div className="gap-5 flex mx-10 text-[34px]">
+            <Link href={'about-us'} className={`px-2 transition-all ${pathname === '/about-us' ? 'text-primary font-bold border-b-4 border-primary brightness-125' : ''}`}>About Us</Link>
+            <Link href={'project'} className={`px-2 transition-all ${pathname === '/project' ? 'text-primary font-bold border-b-4 border-primary brightness-125' : ''}`}>Project</Link>
+            <Link href={'join-us'} className={`px-2 transition-all ${pathname === '/join-us' ? 'text-primary font-bold border-b-4 border-primary brightness-125' : ''}`}>Join Us</Link>
+            <Link href={'donate'} className={`px-2 transition-all ${pathname === '/donate' ? 'text-primary font-bold border-b-4 border-primary brightness-125' : ''}`}>Donate</Link>
+            <Link href={'gallery'} className={`px-2 transition-all ${pathname === '/gallery' ? 'text-primary font-bold border-b-4 border-primary brightness-125' : ''}`}>Gallery</Link>
           </div> 
       </div>
   )

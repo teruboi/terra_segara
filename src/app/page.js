@@ -11,14 +11,22 @@ export const metadata = {
 export default function LandingPage() {
   return (
     <>
-      <div className="max-w-[1920px] max-h-[1020px] h-screen w-screen relative bg-no-repeat bg-cover bg-center" style={{backgroundImage: 'url(images/home-hero.png)'}}>
+      <div className="max-w-full max-h-fit h-screen w-full z-0 relative">
+          <Image
+            src={'/images/home-hero.png'}
+            fill={true}
+            alt="hero home"
+            placeholder="blur"
+            blurDataURL="/images/home-hero-small.png"
+            className="transition-all before:content-[''] before:inset-0 before:animate-pulse before:opacity-0 w-full"
+          />
         <Image
           src={'/Object-graphic6 1.png'}
           width={300}
           height={300}
-          className="absolute right-0 -bottom-28"
+          className="absolute before:content-[''] right-0 -bottom-28 transition-all z-20"
         />
-          <div className="w-full h-full bg-gradient-to-t from-white to-40% flex flex-col justify-center px-20"> 
+          <div className="absolute top-0 w-full h-full bg-gradient-to-t from-white to-40% flex flex-col justify-center px-20 z-10"> 
             <p className="text-[140px] font-normal">Be Part Of</p>
             <p className="text-[140px] font-bold -mt-24">A Change.</p>
             <p className="text-[50px] font-normal -mt-6">Educate, Preserve,  Conserve.</p>
