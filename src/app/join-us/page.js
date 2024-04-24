@@ -30,6 +30,12 @@ const Partners = ({ partner })=>{
 export default function JoinUs() {
     return(
         <>
+        <Image
+            src={'/Object-graphic6 2.png'}
+            width={300}
+            height={300}
+            className="absolute right-48 top-1/2 translate-y-24"
+        />
         <div className="max-w-full max-h-fit bg-white grid grid-flow-cols text-secondary text-3xl mt-44 mb-10 mx-60 gap-y-6 items-center">
             <h1 className="text-8xl font-bold flex-grow">Join Us</h1>
             <p className="w-full">

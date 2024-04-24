@@ -32,6 +32,18 @@ const Founder = [
 export default function AboutUs() {
     return(
         <>
+        <Image
+            src={'/Object-graphic4 1.png'}
+            width={200}
+            height={200}
+            className="absolute left-0 top-3/4 z-10 translate-y-20"
+        />
+        <Image
+            src={'/Object-graphic3 1.png'}
+            width={300}
+            height={300}
+            className="absolute right-0 top-2/3 z-10 translate-y-28"
+        />
         <div className="w-screen h-screen">
             <Image
                 src={'/images/about-us-hero.png'}
