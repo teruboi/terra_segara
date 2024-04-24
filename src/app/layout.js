@@ -1,13 +1,13 @@
 import { Signika } from "next/font/google";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./globals.css";
-import Image from "next/image"; 
-import Link from "next/link";
 import Navbar from "@/components/Navbar"
-import ButtonDefault from "@/components/Button";
 import Footer from "@/components/Footer";
 
 const signika = Signika({
   subsets: ['latin'],
+  weight:'variable',
   display: 'swap',
   variable: '--font-signika'
 })
@@ -30,10 +30,6 @@ export default function RootLayout({ children }) {
           <footer>
             <Footer />
           </footer>
-          <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"></link>
-          <script>
-            new Glide('.glide').mount()
-          </script>
       </body>
     </html>
   );

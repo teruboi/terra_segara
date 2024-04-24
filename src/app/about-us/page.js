@@ -1,4 +1,33 @@
+import SliderFounder from "@/components/SliderFounder";
 import Image from "next/image";
+
+const Founder = [
+    {
+        name: "Prisilia Resolute",
+        desc: "PADI Scuba Diving Instructor, sociologist and development practitioner who has been engaged in several action research projects on waste management and community development in several areas in Indonesia. Her favorite quote is “We must create the living interest in the/our work” - Bradbury & Reason, 2001",
+        img: '/BG 1.png'
+    },
+    {
+        name: "Prisilia Resolute",
+        desc: "PADI Scuba Diving Instructor, sociologist and development practitioner who has been engaged in several action research projects on waste management and community development in several areas in Indonesia. Her favorite quote is “We must create the living interest in the/our work” - Bradbury & Reason, 2001",
+        img: '/BG 1.png'
+    },
+    {
+        name: "Prisilia Resolute",
+        desc: "PADI Scuba Diving Instructor, sociologist and development practitioner who has been engaged in several action research projects on waste management and community development in several areas in Indonesia. Her favorite quote is “We must create the living interest in the/our work” - Bradbury & Reason, 2001",
+        img: '/BG 1.png'
+    },
+    {
+        name: "Prisilia Resolute",
+        desc: "PADI Scuba Diving Instructor, sociologist and development practitioner who has been engaged in several action research projects on waste management and community development in several areas in Indonesia. Her favorite quote is “We must create the living interest in the/our work” - Bradbury & Reason, 2001",
+        img: '/BG 1.png'
+    },
+    {
+        name: "Prisilia Resolute",
+        desc: "PADI Scuba Diving Instructor, sociologist and development practitioner who has been engaged in several action research projects on waste management and community development in several areas in Indonesia. Her favorite quote is “We must create the living interest in the/our work” - Bradbury & Reason, 2001",
+        img: '/BG 1.png'
+    },
+]
 
 export default function AboutUs() {
     return(
@@ -15,28 +44,35 @@ export default function AboutUs() {
                 About Us
             </div>
         </div>
-        <div className="max-w-[1920px] w-screen h-fit py-12 text-center text-secondary text-2xl">
-            <h1 className="text-6xl font-bold">Who Are We?</h1>
+        <div className="max-w-full h-fit py-12 mx-auto w-2/3 text-justify text-secondary text-2xl px-32">
+            <h1 className="text-6xl font-bold text-center">Who Are We?</h1>
             <br />
-            Yayasan Terra Segara Indonesia (YTSI) is a non-profit organization based in Nusa Penida, Bali.<br />
-            Its name is derived from the Sanskrit words "Terra'' which means land and "Segara'' which<br />
-            means sea. Our first point of departure is we believe that the dynamics of land, sea, and the<br />
-            people—all constituent parts of the earth—impact one another as a single, interconnected<br />
-            whole. Thus, as a responsible human being we have the prominent responsibility to maintain<br />
-            the balance between the two. The founders of YTSI are all diving instructors whom have been<br />
-            living and working in Nusa Penida Marine Protected Area (MPA) for more than five years.<br />
+            Yayasan Terra Segara Indonesia (YTSI) is a non-profit organization based in Nusa Penida, Bali. Its name is derived from the Sanskrit words "Terra'' which means land and "Segara'' which means sea. Our first point of departure is we believe that the dynamics of land, sea, and the people—all constituent parts of the earth—impact one another as a single, interconnected whole. Thus, as a responsible human being we have the prominent responsibility to maintain the balance between the two. The founders of YTSI are all diving instructors whom have been living and working in Nusa Penida Marine Protected Area (MPA) for more than five years.
         </div>
         <div className="w-screen h-fit py-12 text-center text-secondary text-2xl">
             <h1 className="text-6xl font-bold">Founder</h1>
+            <SliderFounder content={Founder} />
         </div>
-        <div className="w-screen h-fit py-12 text-center text-secondary text-2xl">
-            <h1 className="text-6xl font-bold mb-12">What we do?</h1>
-            <Image className="mb-12"/>
-            We are eager to solve coral degradation and ocean plastic pollution problems<br />around the island. However, our main objective is to spread our eagerness<br />to everyone and work together in any ways we can. These problems may or may not<br />contribute to climate action but we are working towards grounding the notion of<br />climate change and action in a more profound yet practical way. Climate change is<br />indeed a global issue yet it needs to be addressed locally from our closest proximity.<br />Which is why we bring the concept of cultural preservation, a way in which climate<br />action can be pursued in a culturally appropriate and convenient way.
+        <div className="w-2/3 h-fit py-12 text-justify text-secondary text-2xl">
+            <h1 className="text-6xl font-bold mb-12 text-center">What we do?</h1>
+            <Image
+                src={'/4 1.png'}
+                width={1280}
+                height={720}
+                className="mb-12 object-fill"
+            />
+            <p className="px-32">
+            We are eager to solve coral degradation and ocean plastic pollution problems around the island. However, our main objective is to spread our eagerness to everyone and work together in any ways we can. These problems may or may not contribute to climate action but we are working towards grounding the notion of climate change and action in a more profound yet practical way. Climate change is indeed a global issue yet it needs to be addressed locally from our closest proximity. Which is why we bring the concept of cultural preservation, a way in which climate action can be pursued in a culturally appropriate and convenient way.
+            </p>
         </div>
-        <div className="w-screen h-fit py-12 text-center text-secondary text-2xl mb-10">
+        <div className="w-2/3 h-fit py-12 text-center text-secondary text-2xl mb-10">
             <h1 className="text-6xl font-bold mb-12">How do we work?</h1>
-            <Image className="mb-12"/>
+            <Image
+                src={'/5 1.png'}
+                width={1280}
+                height={720}
+                className="mb-12"
+            />
             To achieve our main objective we propose three agendas of <b>educate, preserve, and conserve.</b><br /><br />
             <ol className="list-decimal list-outside text-secondary w-fit flex flex-col mx-auto -translate-x-16">
                 <li className="text-left ml-36">

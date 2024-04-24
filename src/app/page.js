@@ -8,6 +8,27 @@ export const metadata = {
   description: "Terra Segara website"
 }
 
+const ourWorks = [
+  {
+    image: '/IMG_5465.png',
+    imageSmall: '/IMG_5465_small.png',
+    title: 'Beach Cleaning',
+    date: 'January 7, 2024'
+  },
+  {
+    image: '/IMG_5464.png',
+    imageSmall: '/IMG_5464_small.png',
+    title: 'Beach Cleaning',
+    date: 'January 7, 2024'
+  },
+  {
+    image: '/IMG_5460.png',
+    imageSmall: '/IMG_5460_small.png',
+    title: 'Beach Cleaning',
+    date: 'January 7, 2024'
+  }
+]
+
 export default function LandingPage() {
   return (
     <>
@@ -71,7 +92,7 @@ export default function LandingPage() {
           </div>
         </div>  
       </div>
-      <div className="w-screen h-[1020px] bg-gradient-to-b from-white via-secondary to-white grid grid-flow-col gap-20 justify-center items-center relative">
+      <div className="w-screen h-[1020px] bg-gradient-to-b from-white via-secondary to-white grid grid-flow-col gap-5 justify-center items-center relative">
         <Image
           src={'/Object-graphic3 1.png'}
           width={400}
@@ -86,7 +107,7 @@ export default function LandingPage() {
             <ButtonDefault url={'/'} text={'See More'} variant={3}/>
           </div>
         </div>
-        <div className="group w-[432px] h-[733px] rounded-[45px] drop-shadow-md hover:drop-shadow-2xl hover:w-[489px] hover:h-[832px] transition-all -z-0" style={{backgroundImage:"url('Mission.png')", backgroundPosition:'center', backgroundRepeat:'no-repeat', backgroundSize:'cover'}}>
+        <div className="group w-[432px] h-[733px] rounded-3xl drop-shadow-md hover:drop-shadow-2xl hover:w-[489px] hover:h-[832px] transition-all -z-0" style={{backgroundImage:"url('Mission.png')", backgroundPosition:'center', backgroundRepeat:'no-repeat', backgroundSize:'cover'}}>
           <div className="w-[96%] left-2.5 h-full top-3.5 -z-0 absolute rounded-[43px] group-hover:bg-gradient-to-b from-secondary/70 to-50% transition-all"/>
           <div className="text-center text-[100px] font-bold relative top-0">Mission</div>
           <div className="transition-all rounded-[45px] text-center relative top-[340px] group-hover:top-[400px] flex flex-col justify-between">
@@ -104,8 +125,8 @@ export default function LandingPage() {
         </div>
       </div>
       <div className="w-full h-[1020px] bg-white">
-        {/* <SliderHome /> */}
         <h1 className="text-secondary text-[84px] font-bold text-center">Our Work</h1>
+        <SliderHome content={ourWorks} />
       </div>
     </>
   );

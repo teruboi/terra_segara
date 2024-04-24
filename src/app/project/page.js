@@ -1,5 +1,6 @@
 import Image from "next/image";
 import WorkProject from "@/components/WorkProject";
+import SearchBar from "@/components/SearchBar";
 
 const example = {
     title: 'Empowering Local Youth through SCUBA Dive Training Scholarship - Batch 1/2024',
@@ -50,6 +51,7 @@ export default function Project() {
             </div>
         </div>
         <div className="max-w-full w-screen h-fit py-24 px-24">
+            <SearchBar />
             <WorkProject props={example}/>
         </div>
         </>

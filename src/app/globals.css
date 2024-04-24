@@ -32,4 +32,19 @@ body {
   }
 }
 
+.slick-slide > div {
+  margin: 0 10px;
+}
+
+.slick-dots{
+  scale: 200%;
+}
+
+.slick-dots li.slick-active button:before:hover{
+  color: #B75444 !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #B75444 !important
+ }
 
