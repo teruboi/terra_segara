@@ -94,7 +94,7 @@ export default function LandingPage() {
       </div>
       <div className="w-screen h-[1020px] bg-gradient-to-b from-white via-secondary to-white grid grid-flow-col gap-5 justify-center items-center relative">
         <Image
-          src={'/Object-graphic3 1.png'}
+          src={'/Object-graphic5 1.png'}
           width={400}
           height={900}
           className="absolute left-0 -bottom-40"

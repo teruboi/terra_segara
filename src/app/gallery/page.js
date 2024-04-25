@@ -72,7 +72,7 @@ const Photos = ({src, title})=>{
 export default function Gallery(){
     return(
         <>
-            <div className="max-w-full w-screen h-fit grid grid-cols-2 px-28 py-40 items-center bg-secondary">
+            <div className="max-w-full w-screen h-fit grid grid-cols-2 px-28 pt-40 pb-24 items-center bg-secondary relative">
                 <div className="text-white -bottom-0 relative w-[86.4%]">
                     <h1 className="text-9xl leading-none">Seas of<br/><b>Impact.</b></h1>
                     <p className="text-5xl font-medium leading-snug">Discover the Heart of Our Mission.</p>
@@ -85,6 +85,24 @@ export default function Gallery(){
                     width={800}
                     height={800}
                     className='rounded-bl-[200px] relative -bottom-0'
+                />
+                <Image
+                    src={'/Object-graphic2 1.png'}
+                    width={400}
+                    height={400}
+                    className='absolute left-0 bottom-0'
+                />
+                <Image
+                    src={'/Object-graphic0 3.png'}
+                    width={150}
+                    height={150}
+                    className='absolute right-16 top-24 translate-y-2'
+                />
+                <Image
+                    src={'/Object-graphic0 3.png'}
+                    width={150}
+                    height={150}
+                    className='absolute right-1/2 bottom-16 translate-x-32'
                 />
             </div>
             <div className='max-w-full w-screen h-fit py-20 flex flex-col gap-[72px] justify-center items-center bg-gradient-to-t from-white via-secondary via-50% to-100% text-4xl text-secondary text-center'>
