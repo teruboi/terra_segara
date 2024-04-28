@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export default function ButtonDefault({ text, url, variant }) {
-    let button = 'min-w-[220px] min-h-[60px] h-fit w-fit px-10 text-3xl text-white text-center rounded-[32px] transition-all mx-auto my-5 hover:scale-110 focus:outline-0 flex justify-center'
+    let button = 'min-w-[143px] max-sm:min-w-[130px] min-h-[45px] max-sm:min-h-[40px] h-fit w-fit px-10 max-sm:px-3 max-sm:text-sm text-2xl text-white text-center rounded-[32px] transition-all mx-auto my-5 hover:scale-110 max-sm:hover:scale=[101%] focus:outline-0 flex justify-center'
     if (variant !== null){
         switch (variant) {
             case 1:

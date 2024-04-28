@@ -56,13 +56,13 @@ const gallery2 = [
 
 const Photos = ({src, title})=>{
     return(
-        <div className='w-[518px] h-[518px] flex flex-col items-center text-4xl text-center text-secondary bg-white border-4 border-secondary shadow-lg gap-4 justify-center'>
+        <div className='aspect-square w-96 flex flex-col items-center text-xl text-center text-secondary bg-white border-4 border-secondary shadow-lg gap-4 justify-center'>
             <Image
                 src={src}
-                width={452}
-                height={387}
+                width={350}
+                height={250}
                 alt={title}
-                objectFit='cover'
+                className='object-cover'
             />
             <p>{title}</p>
         </div>
@@ -72,41 +72,41 @@ const Photos = ({src, title})=>{
 export default function Gallery(){
     return(
         <>
-            <div className="max-w-full w-screen h-fit grid grid-cols-2 px-28 pt-40 pb-24 items-center bg-secondary relative">
-                <div className="text-white -bottom-0 relative w-[86.4%]">
-                    <h1 className="text-9xl leading-none">Seas of<br/><b>Impact.</b></h1>
-                    <p className="text-5xl font-medium leading-snug">Discover the Heart of Our Mission.</p>
-                    <p className="text-4xl mt-8">
+            <div className="w-screen h-fit flex justify-between px-20 pt-32 pb-24 items-center bg-secondary relative">
+                <div className="text-white -bottom-0 relative w-[45%]">
+                    <h1 className="leading-[0.8] text-8xl">Seas of<br/><b>Impact.</b></h1>
+                    <p className="text-[34px] leading-snug mt-5">Discover the Heart of Our Mission.</p>
+                    <p className="text-[28px] mt-5">
                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.”
                     </p>
                 </div>
                 <Image
                     src={'https://terra-segara-asset.s3.ap-southeast-2.amazonaws.com/Website+Asset/IMG_5459+1.png'}
-                    width={800}
-                    height={800}
+                    width={500}
+                    height={500}
                     className='rounded-bl-[200px] relative -bottom-0'
                 />
                 <Image
                     src={'/Object-graphic2 1.png'}
-                    width={400}
-                    height={400}
-                    className='absolute left-0 bottom-0'
+                    width={300}
+                    height={300}
+                    className='absolute left-0 bottom-0 translate-y-5'
                 />
                 <Image
                     src={'/Object-graphic0 3.png'}
-                    width={150}
-                    height={150}
-                    className='absolute right-16 top-24 translate-y-2'
+                    width={125}
+                    height={125}
+                    className='absolute right-8 top-20'
                 />
                 <Image
                     src={'/Object-graphic0 3.png'}
-                    width={150}
-                    height={150}
-                    className='absolute right-1/2 bottom-16 translate-x-32'
+                    width={125}
+                    height={125}
+                    className='absolute right-1/2 bottom-24 translate-x-44'
                 />
             </div>
-            <div className='max-w-full w-screen h-fit py-20 flex flex-col gap-[72px] justify-center items-center bg-gradient-to-t from-white via-secondary via-50% to-100% text-4xl text-secondary text-center'>
-                <p className='max-w-fit mx-40 translate-y-2'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."</p>
+            <div className='max-w-screen w-screen h-fit py-20 flex flex-col gap-[72px] justify-center items-center bg-gradient-to-t from-white via-secondary via-50% to-100% text-2xl text-secondary text-center'>
+                <p className='max-w-fit mx-32 translate-y-2'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."</p>
                 <div className='flex w-fit h-fit gap-9 items-center justify-center'>
                     {gallery1.map((e, i)=>{ 
                         return(<Photos src={e.src} title={e.title} key={i}/>)
@@ -115,7 +115,7 @@ export default function Gallery(){
                 <p className='max-w-fit mx-40'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."</p>
             </div>
             <div className='max-w-full max-h-fit h-fit w-screen py-1'>
-                <div className='mx-32 h-fit w-fit flex flex-wrap justify-stretch gap-4'>
+                <div className='mx-10 h-fit w-fit flex flex-wrap justify-stretch gap-4'>
                     {gallery2.map((e, i)=>{
                         return(
                             <Image
@@ -131,7 +131,7 @@ export default function Gallery(){
                         )
                     })}
                 </div>
-                <p className='w-fit mx-40 text-4xl text-secondary text-center my-16'>
+                <p className='w-fit mx-20 text-2xl text-secondary text-center my-16'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
             </div>

@@ -23,33 +23,33 @@ function SliderFounder({ content }) {
     slidesToScroll: 1,
     arrows: false,
     centerMode: true,
-    centerPadding: '400px',
+    centerPadding: '200px',
     className: 'relative',
     autoplay: true,
     speed: 1000,
     autoplaySpeed: 5000,
   };
   return (
-    <div className="slider-container h-[720px] w-full mx-auto rounded-xl transition-all relative">
+    <div className="slider-container h-fit w-full mx-auto rounded-xl transition-all relative">
       <Slider ref={slider => {
         sliderRef = slider;
       }} {...settings} >
         {content.map((e, i)=>{
             return(
-                <div key={i} className="h-[600px] w-full text-center relative focus:outline-0 border-[16px] border-white rounded-[48px] bg-primary grid">
+                <div key={i} className="min-h-[480px] py-10 w-full text-center relative focus:outline-0 border-[16px] border-white rounded-[48px] bg-primary grid">
                   <div className="flex h-full w-[95%] px-10 gap-6 items-center mx-auto">
                     <Image
                         src={e.img}
-                        height={600}
-                        width={600}
+                        height={400}
+                        width={400}
                         placeholder="blur"
                         blurDataURL={e.img}
                         alt={e.name}
-                        className="object-cover object-center w-1/2"
+                        className="object-cover object-center w-1/2 aspect-square rounded-3xl"
                     />
                     <div className="w-1/2">
-                        <h1 className="text-7xl text-left text-white">{e.name}</h1>
-                        <h3 className="text-2xl text-justify text-white leading-relaxed">{e.desc}</h3>
+                        <h1 className="text-3xl text-left text-white">{e.name}</h1>
+                        <h3 className="text-base text-justify text-white leading-relaxed">{e.desc}</h3>
                     </div>
                   </div>
                     

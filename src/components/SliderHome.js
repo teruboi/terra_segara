@@ -26,24 +26,24 @@ function SliderHome({ content }) {
     slidesToScroll: 1,
     arrows: false,
     centerMode: true,
-    centerPadding: '300px',
+    centerPadding: '150px',
     className: 'relative',
     autoplay: true,
     speed: 1000,
     autoplaySpeed: 5000,
   };
   return (
-    <div className="h-[720px] w-full mx-auto rounded-xl transition-all relative slider-container ">
+    <div className="h-[500px] w-full mx-auto rounded-xl transition-all relative slider-container ">
       <div className="flex absolute h-full w-full z-10 justify-between pointer-events-none">
-        <div className="h-full w-1/3 bg-gradient-to-r from-white to-80%"/>
-        <div className="h-full w-1/3 bg-gradient-to-l from-white to-80%"/>
+        <div className="h-full w-1/3 bg-gradient-to-r from-white to-50%"/>
+        <div className="h-full w-1/3 bg-gradient-to-l from-white to-50%"/>
       </div>
       <Slider ref={slider => {
         sliderRef = slider;
       }} {...settings} >
         {content.map((e, i)=>{
             return(
-                <div key={i} className="h-[720px] w-full text-center relative focus:outline-0 border-[16px] border-white rounded-[48px]">
+                <div key={i} className="h-[500px] w-full text-center relative focus:outline-0 border-[16px] border-white rounded-[48px]">
                     <Image
                         src={e.image}
                         placeholder="blur"
@@ -53,8 +53,8 @@ function SliderHome({ content }) {
                         className="object-cover object-bottom h-full mx-auto -z-10"
                     />
                     <div className="absolute bottom-0 pb-5 w-full bg-gradient-to-t from-secondary -z-10">
-                        <h1 className="text-6xl font-bold">{e.title}</h1>
-                        <h3 className="text-3xl">{e.date}</h3>
+                        <h1 className="text-3xl font-bold">{e.title}</h1>
+                        <h3 className="text-xl">{e.date}</h3>
                     </div>
                 </div>
             )

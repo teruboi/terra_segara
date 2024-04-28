@@ -9,7 +9,7 @@ const dummy = {
 
 const Partners = ({ partner })=>{
     return(
-    <div className="min-w-96 min-h-[400px] w-fit h-fit rounded-[45px] shadow-2xl bg-white p-10">
+    <div className="min-w-[400px] min-h-[200px] w-fit h-fit rounded-[45px] shadow-2xl bg-white p-10">
         <div className="my-5 flex items-start justify-center gap-x-9">
             <Image
                 src={partner.avatar}
@@ -19,8 +19,8 @@ const Partners = ({ partner })=>{
                 className="rounded-full"
             />
             <div className="text-secondary">
-                <h1 className="text-4xl font-bold mb-4">{partner.name}</h1>
-                <p className="text-2xl leading-tight">{partner.description}</p>
+                <h1 className="text-2xl font-bold mb-4">{partner.name}</h1>
+                <p className="text-lg leading-tight">{partner.description}</p>
             </div>
         </div>
     </div>
@@ -32,18 +32,18 @@ export default function JoinUs() {
         <>
         <Image
             src={'/Object-graphic6 2.png'}
-            width={300}
-            height={300}
+            width={200}
+            height={200}
             className="absolute right-48 top-1/2 translate-y-24"
         />
-        <div className="max-w-full max-h-fit bg-white grid grid-flow-cols text-secondary text-3xl mt-44 mb-10 mx-60 gap-y-6 items-center">
-            <h1 className="text-8xl font-bold flex-grow">Join Us</h1>
+        <div className="max-w-full max-h-fit bg-white grid grid-flow-cols text-secondary text-xl mt-28 mb-10 mx-20 gap-y-2 items-center">
+            <h1 className="text-6xl font-bold flex-grow">Join Us</h1>
             <p className="w-full">
-            Related to our project, other than funding options we are also open to any support covering our logistics, consumption, and/or other communication outreach. Please do not hesitate to contact us through the contact info provided at the end of this webpage. Any support is invaluable as we are planning to conduct our project in a long-term cohort- based period and involve as many locals as possible.
+            In relation to our project, aside from financial contributions, we welcome assistance in logistics, provisions, and communication channels. We encourage interested parties to reach out to us via the contact information provided at the bottom of this webpage. Every form of support is highly valued, as we aim to execute our project over an extended period in a cohort-based approach, with the goal of engaging as many local participants as possible.
             </p>
             <div className="leading-tight my-3">
                 <p className="font-bold">Email</p>
-                terrasegara@gmail.com
+                hello@terrasegara.org
             </div>
             <div className="leading-tight my-3">
                 <p className="font-bold">WhatsApp</p>
@@ -55,20 +55,20 @@ export default function JoinUs() {
             </div>
         </div>
         <div className="max-w-fit w-screen h-fit mb-20 px-60">
-            <h1 className="text-secondary text-8xl font-bold text-right">What Our Partners Said</h1>
+            <h1 className="text-secondary text-6xl font-bold text-right mb-5">What Our Partners Said</h1>
             <div className="h-fit flex gap-x-9 justify-center items-center">
                 <Partners partner={dummy} />
                 <Partners partner={dummy} />
             </div>
         </div>
-        <div className="max-w-full w-screen h-fit px-60 flex flex-col gap-4">
-            <h1 className="text-secondary text-8xl font-bold">Let's Get in Touch!</h1>
-            <p className="text-3xl text-secondary leading-tight">We strive to involve as many people, institutions, organizations, as well as individuals aligned with our objective and process as possible. We open every opportunity and recommendation from you. Please provide us your name, email, and valuable message in the column below.</p>
-            <form className="text-[34px] flex flex-col gap-y-5 my-10 justify-start">
+        <div className="max-w-full w-screen h-fit px-20 flex flex-col gap-2">
+            <h1 className="text-secondary text-6xl font-bold">Let's Get in Touch!</h1>
+            <p className="text-xl text-secondary leading-tight">We are dedicated to engaging a wide array of stakeholders, including institutions, organizations, and individuals who share our vision and ethos. We welcome any insights, opportunities, or recommendations you may have to offer. Kindly share your name, email address, and any valuable messages you wish to convey in the space provided below.</p>
+            <form className="text-lg flex flex-col gap-y-2 my-4 justify-start">
                 <input type="text" name="name" placeholder="Your Name" className="placeholder:text-secondary border-[3px] text-secondary border-secondary rounded-2xl px-5 py-2.5 max-h-[60px] h-fit w-[346px] focus:placeholder:text-opacity-50 transition-colors shadow-md"/>
                 <input type="email" name="email" placeholder="Your Email" className="placeholder:text-secondary border-[3px] text-secondary border-secondary rounded-2xl px-5 py-2.5 max-h-[60px] h-fit w-[346px] focus:placeholder:text-opacity-50 transition-colors shadow-md"/>
                 <textarea name="message" cols={7} placeholder="Your Message" className="placeholder:text-secondary border-[3px] text-secondary border-secondary rounded-2xl px-5 py-2.5 h-[340px] focus:placeholder:text-opacity-50 transition-colors shadow-md"/>
-                <button type="submit" className="bg-secondary min-w-[220px] max-h-[60px] h-fit w-fit px-10 py-1 text-[34px] text-white text-center rounded-[32px] transition-all mt-2">Send</button>
+                <button type="submit" className="bg-secondary min-w-[220px] max-h-[60px] h-fit w-fit px-10 py-1 text-base text-white text-center rounded-[32px] transition-all mt-2">Send</button>
             </form>
         </div>
         </>

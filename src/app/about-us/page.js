@@ -3,23 +3,23 @@ import Image from "next/image";
 
 const Founder = [
     {
-        name: "Prisilia Resolute",
-        desc: "PADI Scuba Diving Instructor, sociologist and development practitioner who has been engaged in several action research projects on waste management and community development in several areas in Indonesia. Her favorite quote is “We must create the living interest in the/our work” - Bradbury & Reason, 2001",
-        img: '/BG 1.png'
+        name: "Pascal Sebastian",
+        desc: 'A distinguished Scuba Diving Instructor certified by PADI and ADSI, renowned marine biologist, and esteemed coral restoration expert. With a notable track record, he has spearheaded numerous research initiatives and coral restoration projects within the Nusa Penida Marine Protected Area (MPA). His dedication to environmental conservation is encapsulated in his favorite quote: "There is no such thing as a free lunch."',
+        img: '/DOS03602.JPG'
     },
     {
         name: "Prisilia Resolute",
-        desc: "PADI Scuba Diving Instructor, sociologist and development practitioner who has been engaged in several action research projects on waste management and community development in several areas in Indonesia. Her favorite quote is “We must create the living interest in the/our work” - Bradbury & Reason, 2001",
+        desc: 'An accomplished Scuba Diving Instructor certified by PADI, as well as a distinguished sociologist, Participatory Action Research learner and development practitioner. She has played a pivotal role in numerous action research endeavors focusing on waste management and community development across various regions in Indonesia. Her dedication to her work is epitomized by her favorite quote from Bradbury & Reason, 2001: "We must create a living interest in our work."',
         img: '/BG 1.png'
     },
     {
-        name: "Prisilia Resolute",
-        desc: "PADI Scuba Diving Instructor, sociologist and development practitioner who has been engaged in several action research projects on waste management and community development in several areas in Indonesia. Her favorite quote is “We must create the living interest in the/our work” - Bradbury & Reason, 2001",
-        img: '/BG 1.png'
+        name: "Daniel Sakidin",
+        desc: 'A highly esteemed PADI Staff Instructor renowned for his dedication to training and certifying numerous locals from Nusa Penida, enabling him to pursue rewarding careers within the diving industry. With a fervent commitment to fostering inclusivity, he is passionate about affording local communities the opportunity to engage with and explore the diving sector. Reflecting his profound respect for learning, one of his cherished quotes comes from Socrates: "To know, is to know that you know nothing. That is the meaning of true knowledge."',
+        img: '/DOS03601.JPG'
     },
     {
-        name: "Prisilia Resolute",
-        desc: "PADI Scuba Diving Instructor, sociologist and development practitioner who has been engaged in several action research projects on waste management and community development in several areas in Indonesia. Her favorite quote is “We must create the living interest in the/our work” - Bradbury & Reason, 2001",
+        name: "Ali Rohmat and Rudi",
+        desc: 'Seasoned entrepreneurs who have successfully managed Nusa Penida Dive Center (NPDC) for over a decade. Through their business, they have not only cultivated a thriving diving enterprise but have also played a significant role in empowering locals to enter the diving industry in Nusa Penida. Their commitment to excellence is encapsulated in the words of Maya Angelou: "Do the best you can until you know better. Then when you know better, do better."',
         img: '/BG 1.png'
     },
     {
@@ -34,14 +34,14 @@ export default function AboutUs() {
         <>
         <Image
             src={'/Object-graphic4 1.png'}
-            width={200}
-            height={200}
+            width={120}
+            height={120}
             className="absolute left-0 top-3/4 z-10 translate-y-20"
         />
         <Image
             src={'/Object-graphic3 1.png'}
-            width={300}
-            height={300}
+            width={200}
+            height={200}
             className="absolute right-0 top-2/3 z-10 translate-y-28"
         />
         <div className="w-screen h-screen">
@@ -52,52 +52,54 @@ export default function AboutUs() {
                 fill
                 className="object-cover object-center"
             />
-            <div className="absolute w-full h-full bg-gradient-to-t from-white to-40% text-center text-secondary text-[140px] font-bold grid content-end">
+            <div className="absolute w-full h-full bg-gradient-to-t from-white to-40% text-center text-secondary text-8xl font-bold grid content-end">
                 About Us
             </div>
         </div>
-        <div className="max-w-full h-fit py-12 mx-auto w-2/3 text-justify text-secondary text-2xl px-32">
-            <h1 className="text-6xl font-bold text-center">Who Are We?</h1>
+        <div className="max-w-full h-fit py-12 mx-auto w-2/3 text-justify text-secondary text-xl">
+            <h1 className="text-4xl font-bold text-center">Who Are We?</h1>
             <br />
             Yayasan Terra Segara Indonesia (YTSI) is a non-profit organization based in Nusa Penida, Bali. Its name is derived from the Sanskrit words "Terra'' which means land and "Segara'' which means sea. Our first point of departure is we believe that the dynamics of land, sea, and the people—all constituent parts of the earth—impact one another as a single, interconnected whole. Thus, as a responsible human being we have the prominent responsibility to maintain the balance between the two. The founders of YTSI are all diving instructors whom have been living and working in Nusa Penida Marine Protected Area (MPA) for more than five years.
         </div>
         <div className="w-screen h-fit py-12 text-center text-secondary text-2xl">
-            <h1 className="text-6xl font-bold">Founder</h1>
+            <h1 className="text-4xl font-bold">Founder</h1>
             <SliderFounder content={Founder} />
         </div>
-        <div className="w-2/3 h-fit py-12 text-justify text-secondary text-2xl">
-            <h1 className="text-6xl font-bold mb-12 text-center">What we do?</h1>
+        <div className="w-2/3 h-fit mt-10 text-justify text-secondary text-xl">
+            <h1 className="text-4xl font-bold mb-12 text-center">What we do?</h1>
             <Image
                 src={'/4 1.png'}
                 width={1280}
                 height={720}
                 className="mb-12 object-fill"
             />
-            <p className="px-32">
-            We are eager to solve coral degradation and ocean plastic pollution problems around the island. However, our main objective is to spread our eagerness to everyone and work together in any ways we can. These problems may or may not contribute to climate action but we are working towards grounding the notion of climate change and action in a more profound yet practical way. Climate change is indeed a global issue yet it needs to be addressed locally from our closest proximity. Which is why we bring the concept of cultural preservation, a way in which climate action can be pursued in a culturally appropriate and convenient way.
+            <p className="">
+            We are committed to addressing the challenges of coral degradation and ocean plastic pollution prevalent across the island. However, our primary aim extends beyond mere problem-solving; we are dedicated to instilling a shared sense of urgency and mobilizing collective efforts toward resolution. While these issues may not directly contribute to climate action, our overarching goal is to anchor the discourse of climate change and action in a substantive yet practical manner. Recognizing the global scope of climate change, we emphasize the importance of local engagement, advocating for solutions tailored to our immediate surroundings. To this end, we integrate the concept of cultural preservation, fostering a culturally relevant and accessible approach to climate action.
             </p>
         </div>
-        <div className="w-2/3 h-fit py-12 text-center text-secondary text-2xl mb-10">
-            <h1 className="text-6xl font-bold mb-12">How do we work?</h1>
+        <div className="w-2/3 h-fit py-12 text-justify text-secondary text-xl mb-10">
+            <h1 className="text-4xl font-bold mb-12 text-center">How do we work?</h1>
             <Image
                 src={'/5 1.png'}
                 width={1280}
                 height={720}
                 className="mb-12"
             />
-            To achieve our main objective we propose three agendas of <b>educate, preserve, and conserve.</b><br /><br />
+            To effectively advance our overarching objective, we have identified three key focal points:<br /><br />
             <ol className="list-decimal list-outside text-secondary w-fit flex flex-col mx-auto -translate-x-16">
                 <li className="text-left ml-36">
-                    Educate: Climate change issues need to be informed through formal, informal, and non-<br/>formal education. Scuba Dive training for example, can provide non-formal education to<br/>inform climate change adaptation through hands-on experience and a fun way.                    
+                    <b>Educate</b>: Climate change awareness must be disseminated through various educational avenues, including formal, informal, and non-formal channels. For instance, integrating climate change education into scuba dive training offers a hands-on approach and fosters engagement through experiential learning.                   
                 </li>
                 <li className="text-left ml-36">
-                    Preserve: Inasmuch as climate change is an environmental issue, its adaptation is a social<br/>and cultural issue. Addressing climate change adaptation thus needs to be done through<br/>preserving culture by acknowledging local wisdom or knowledge.
+                    <b>Preserve</b>: While climate change predominantly impacts the environment, its adaptation necessitates addressing social and cultural dimensions. Therefore, efforts toward climate change adaptation should prioritize the preservation of local culture by honoring indigenous knowledge and traditional practices.
+
                 </li>
                 <li className="text-left ml-36">
-                    Conserve: Education and preservation can increase people's awareness of the climate<br/>change issue and adaptation which lead them to the act of conserving nature and culture.
+                    <b>Conserve</b>: By fostering education and cultural preservation, individuals become more cognizant of climate change and its implications, motivating them to actively participate in conservation efforts aimed at safeguarding both natural and cultural heritage.
+
                 </li>
             </ol><br />
-            The three agendas are fluid and subject to change as we work on a participatory<br />research basis. This means, Nusa Penida people know better than us the 'expert', thus<br />our point of departure is their local knowledge and wisdom, instead of ours.
+            It is imperative to note that these agendas are dynamic and adaptable, evolving through participatory research methodologies. Operating on a collaborative basis with the community of Nusa Penida, we recognize their invaluable expertise and local wisdom as paramount. Hence, our approach is rooted in acknowledging and integrating their indigenous knowledge into our initiatives, placing their insights at the forefront of our endeavors.
         </div>
         </>
     )
