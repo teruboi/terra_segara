@@ -7,9 +7,9 @@ export default function Donate(){
                 src={'/Object-graphic3 2.png'}
                 width={300}
                 height={150}
-                className="absolute left-0 top-1/2 -translate-y-10"
+                className="absolute left-0 top-1/2 -translate-y-8"
             />
-            <div className="max-w-full w-screen max-h-[1080px] h-screen bg-white flex flex-col text-secondary text-xl mt-16 -mb-16 justify-center gap-y-2 px-10">
+            <div className="max-w-full w-screen h-fit bg-white flex flex-col text-secondary text-xl mt-28 justify-center gap-y-2 px-10">
                 <h1 className="text-5xl">We can make <span className="font-bold text-7xl">A Difference,</span></h1>
                 <Image
                     src={'/crystal bay 1.png'}
@@ -19,11 +19,10 @@ export default function Donate(){
                     className="rounded-3xl"
                 />
                 <p className="font-bold text-7xl text-right">Together.</p>
-                <p className="mt-5 text-justify">
+                <p className="my-5 text-justify">
                 Welcome to our donation page! Your support is invaluable in helping us achieve our mission and make a meaningful impact in the lives of those we serve. With your generous contributions, we can continue to provide essential resources, support, and opportunities to those in need. Whether you choose to donate once or become a recurring donor, every contribution brings us closer to creating positive change and building a better future for all. 
                 <br/><br/>
                 Thank you for joining us in our journey to make a difference! Your generosity today is a beacon of hope for a brighter tomorrow.
-
                 </p>
             </div>
             <div className="max-w-screen w-screen h-fit py-12 flex gap-1 justify-evenly text-secondary bg-gradient-to-b items-center from-white via-secondary via-50% to-100% px-32">

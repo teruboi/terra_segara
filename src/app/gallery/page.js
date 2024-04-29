@@ -6,6 +6,66 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled); // The maximum is exclusive and the minimum is inclusive
   }
 
+const SCUBAGallery1 = [
+    {
+        src: '/DOS02590.JPG',
+    },
+    {
+        src: '/DOS02585.JPG',
+    },
+    {
+        src: '/DOS02647.JPG',
+    },
+    {
+        src: '/DOS02568.JPG',
+    },
+    {
+        src: '/DOS02596.JPG',
+    },
+]
+
+const SCUBAGallery2 = [
+    {
+        src: '/',
+    },
+    {
+        src: '/',
+    },
+    {
+        src: '/',
+    }
+]
+
+const SCUBAGallery3 = [
+    {
+        src: '/',
+    },
+    {
+        src: '/',
+    },
+    {
+        src: '/',
+    }
+]
+
+const SCUBAGallery4 = [
+    {
+        src: '/',
+    },
+    {
+        src: '/',
+    },
+    {
+        src: '/',
+    },
+    {
+        src: '/',
+    },
+    {
+        src: '/',
+    }
+]
+
 const gallery1 = [
     {
         src: 'https://terra-segara-asset.s3.ap-southeast-2.amazonaws.com/Website+Asset/IMG_5423.png',
@@ -75,10 +135,6 @@ export default function Gallery(){
             <div className="w-screen h-fit flex justify-between px-20 pt-32 pb-24 items-center bg-secondary relative">
                 <div className="text-white -bottom-0 relative w-[45%]">
                     <h1 className="leading-[0.8] text-8xl">Seas of<br/><b>Impact.</b></h1>
-                    <p className="text-[34px] leading-snug mt-5">Discover the Heart of Our Mission.</p>
-                    <p className="text-[28px] mt-5">
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.”
-                    </p>
                 </div>
                 <Image
                     src={'https://terra-segara-asset.s3.ap-southeast-2.amazonaws.com/Website+Asset/IMG_5459+1.png'}
@@ -106,7 +162,7 @@ export default function Gallery(){
                 />
             </div>
             <div className='max-w-screen w-screen h-fit py-20 flex flex-col gap-[72px] justify-center items-center bg-gradient-to-t from-white via-secondary via-50% to-100% text-2xl text-secondary text-center'>
-                <p className='max-w-fit mx-32 translate-y-2'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."</p>
+                <p className='max-w-fit mx-32 translate-y-2 font-bold'>Empowering Local Youth through SCUBA Dive Training Scholarship - Batch 1/2024</p>
                 <div className='flex w-fit h-fit gap-9 items-center justify-center'>
                     {gallery1.map((e, i)=>{ 
                         return(<Photos src={e.src} title={e.title} key={i}/>)
@@ -126,7 +182,7 @@ export default function Gallery(){
                                 alt={e.alt}
                                 placeholder='blur'
                                 blurDataURL={e.blurDataURL}
-                                className='colspan-2 hover:scale-105 transition-all ease-in object-center object-cover flex-grow'
+                                className='colspan-2 hover:scale-[95%] transition-all ease-in object-center object-cover flex-grow'
                             />
                         )
                     })}

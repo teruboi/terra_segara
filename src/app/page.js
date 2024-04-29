@@ -50,7 +50,6 @@ export default function LandingPage() {
           <div className="absolute top-0 w-full h-full bg-gradient-to-t from-white to-40% flex flex-col justify-center max-sm:px-10 px-20 z-10 gap-20"> 
             <p className="text-8xl max-sm:text-2xl font-normal">Be Part Of</p>
             <p className="text-8xl max-sm:text-2xl font-bold -mt-24 max-sm:translate-y-1">A Change.</p>
-            <p className="text-[34px] max-sm:text-[8.5px] font-normal -mt-16 max-sm:-translate-y-4">Educate, Preserve,  Conserve.</p>
           </div>
       </div>
         
@@ -65,7 +64,7 @@ export default function LandingPage() {
               blurDataURL="/1 small(2).png"
               width={350}
               height={350}
-              className="object-contain rounded-3xl"/>
+              className="object-contain rounded-3xl mb-3"/>
             <ButtonDefault url={'/about-us'} text={'Who are we?'} variant={1}/>
           </div>
           <div className="grid justify-center">
@@ -75,7 +74,7 @@ export default function LandingPage() {
                 blurDataURL="/3 (1).png"
                 width={350}
                 height={350}
-                className="object-contain rounded-3xl"
+                className="object-contain rounded-3xl mb-3"
               />
             <ButtonDefault url={'/about-us'} text={'What we do?'} variant={1}/>
           </div>
@@ -85,8 +84,8 @@ export default function LandingPage() {
                 placeholder="blur"
                 blurDataURL="/2 (1).png"
                 width={350}
-              height={350}
-                className="object-contain rounded-3xl"
+                height={350}
+                className="object-contain rounded-3xl mb-3" 
             />
             <ButtonDefault url={'/about-us'} text={'How do we work?'} variant={1}/>
           </div>

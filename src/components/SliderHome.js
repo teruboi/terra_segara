@@ -26,7 +26,7 @@ function SliderHome({ content }) {
     slidesToScroll: 1,
     arrows: false,
     centerMode: true,
-    centerPadding: '150px',
+    centerPadding: '100px',
     className: 'relative',
     autoplay: true,
     speed: 1000,

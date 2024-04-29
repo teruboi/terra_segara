@@ -6,9 +6,9 @@ export default function Footer() {
     return(
         <>
             <div className="bg-primary grid grid-cols-11 h-fit w-full text-white justify-center items-center gap-32 max-sm:gap-2 sm:pl-20 py-5">
-              <div className="w-fit h-fit flex flex-col col-span-5 mx-auto sm:translate-x-7 justify-start max-sm:scale-50">
+              <div className="w-fit h-fit flex flex-col col-span-5 mx-auto sm:translate-x-6 justify-start max-sm:scale-50">
                 <h1 className="font-bold text-5xl h-fit w-fit mx-auto">Give Us A Shout!</h1>
-                <p className="font-normal w-2/3 mx-auto text-xl text-center leading-snug">
+                <p className="font-normal mx-auto my-5 text-base text-center leading-snug px-5">
                 We are dedicated to engaging a wide array of stakeholders, including institutions, organizations, and individuals who share our vision and ethos. We welcome any insights, opportunities, or recommendations you may have to offer. Kindly share your name, email address, and any valuable messages you wish to convey in the space provided below.
                 </p>
                 <ButtonDefault text='Join Us!' url={'/'} variant={2}/>
@@ -49,10 +49,10 @@ export default function Footer() {
                     />
                   </Link>
                 </div>
-                <p className="mt-5">Let's stay connected!</p>
+                <p className="mt-5 mb-1.5">Let's stay connected!</p>
                 <ButtonDefault text='Subscribe' url='/' variant={2}/>
-                <p>lorem@ipsum.org</p><br/>
-                <p>© 2024 Terra Segara</p>
+                <p>lorem@ipsum.org</p>
+                <p className="mt-5">© 2024 Terra Segara</p>
                 <p>Nusa Penida, Bali, Indonesia</p>
               </div>
             </div>
