@@ -23,7 +23,7 @@ function SliderFounder({ content }) {
     slidesToScroll: 1,
     arrows: false,
     centerMode: true,
-    centerPadding: '200px',
+    centerPadding: '250px',
     className: 'relative',
     autoplay: true,
     speed: 1000,
@@ -36,20 +36,20 @@ function SliderFounder({ content }) {
       }} {...settings} >
         {content.map((e, i)=>{
             return(
-                <div key={i} className="min-h-[480px] py-10 w-full text-center relative focus:outline-0 border-[16px] border-white rounded-[48px] bg-primary grid">
-                  <div className="flex h-full w-[95%] px-10 gap-6 items-center mx-auto">
+                <div key={i} className="min-h-[360px] py-10 text-center relative focus:outline-0 border-[16px] border-white rounded-[48px] bg-primary grid">
+                  <div className="flex h-full w-fit px-10 gap-6 items-center mx-auto">
                     <Image
                         src={e.img}
-                        height={400}
-                        width={400}
+                        height={250}
+                        width={250}
                         placeholder="blur"
                         blurDataURL={e.img}
                         alt={e.name}
-                        className="object-cover object-center w-1/2 aspect-square rounded-3xl"
+                        className="object-cover object-center aspect-square rounded-3xl"
                     />
-                    <div className="w-1/2">
+                    <div className="w-full">
                         <h1 className="text-3xl text-left text-white">{e.name}</h1>
-                        <h3 className="text-base text-justify text-white leading-relaxed">{e.desc}</h3>
+                        <h3 className="text-sm text-justify text-white leading-snug">{e.desc}</h3>
                     </div>
                   </div>
                     

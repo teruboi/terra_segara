@@ -1,4 +1,8 @@
+'use client'
+
+import { TSImg } from '@/components/TSImg';
 import Image from 'next/image'
+import { useState } from 'react';
 
 function getRandomInt(min, max) {
     const minCeiled = Math.ceil(min);
@@ -6,6 +10,7 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled); // The maximum is exclusive and the minimum is inclusive
   }
 
+//Opening ceremony attended by youth participants, and partners from Nusa Penida Dive Center, Nuansa Pulau, and SMAN 1 Nusa Penida
 const SCUBAGallery1 = [
     {
         src: '/DOS02590.JPG',
@@ -24,45 +29,107 @@ const SCUBAGallery1 = [
     },
 ]
 
+//Dive Theory Session
 const SCUBAGallery2 = [
     {
-        src: '/',
+        src: '/DOS02740.JPG',
     },
     {
-        src: '/',
+        src: '/DOS02816.JPG',
     },
     {
-        src: '/',
+        src: '/DOS03326.JPG',
     }
 ]
 
+
+
+//Confined water session
 const SCUBAGallery3 = [
     {
-        src: '/',
+        src: '/DOS02695.JPG',
     },
     {
-        src: '/',
+        src: '/DOS02682.JPG',
     },
     {
-        src: '/',
+        src: '/DOS02690.JPG',
     }
 ]
 
+//Open water session
 const SCUBAGallery4 = [
     {
-        src: '/',
+        src: '/DOS03270.JPG',
     },
     {
-        src: '/',
+        src: '/DOS03256.JPG',
     },
     {
-        src: '/',
+        src: '/DOS03126.JPG',
     },
     {
-        src: '/',
+        src: '/DOS03115.JPG',
     },
     {
-        src: '/',
+        src: '/DOS03231.JPG',
+    }
+]
+
+//Monitoring and evaluation process attended by participants and YTSI team
+const SCUBAGallery5 = [
+    {
+        src: '/DOS03425.JPG',
+    },
+    {
+        src: '/DOS03430.JPG',
+    },
+    {
+        src: '/DOS03439.JPG',
+    },
+    {
+        src: '/DOS03450.JPG',
+    },
+    {
+        src: '/DOS03459.JPG',
+    }
+]
+
+//Closing and graduation ceremony attended by participants, volunteer instructors and partners in February 
+const SCUBAGallery6 = [
+    {
+        src: '/DOS03701.JPG',
+    },
+    {
+        src: '/DOS03664.JPG',
+    },
+    {
+        src: '/DOS03712.JPG',
+    },
+    {
+        src: '/DJI_0182.JPG',
+    }
+]
+
+//Thanks to our amazing volunteer instructor!
+const volunteer = '/DOS02583.JPG'
+
+//Beach Cleaning with local children and YTSI team
+const BeachCleaning = [
+    {
+        src: '/IMG_5460.JPG',
+    },
+    {
+        src: '/IMG_5462.JPG',
+    },
+    {
+        src: '/IMG_5464.JPG',
+    },
+    {
+        src: '/IMG_5456.JPG',
+    },
+    {
+        src: '/IMG_0328.jpg',
     }
 ]
 
@@ -114,6 +181,10 @@ const gallery2 = [
     },
 ]
 
+
+
+
+
 const Photos = ({src, title})=>{
     return(
         <div className='aspect-square w-96 flex flex-col items-center text-xl text-center text-secondary bg-white border-4 border-secondary shadow-lg gap-4 justify-center'>
@@ -122,7 +193,7 @@ const Photos = ({src, title})=>{
                 width={350}
                 height={250}
                 alt={title}
-                className='object-cover'
+                className='object-cover '
             />
             <p>{title}</p>
         </div>
@@ -130,17 +201,44 @@ const Photos = ({src, title})=>{
 }
 
 export default function Gallery(){
+    const [open, setOpen] = useState(false)
+
+    const GalleryPhoto = ({ gallery, title }) => {
+        return(
+            <>
+                <div className='w-full h-fit flex flex-wrap px-10 gap-2'>
+                {gallery.map((e, i)=>{
+                    console.log(e.src)
+                    return(
+                        <Image
+                        key={i}
+                        src={e.src}
+                        width={300}
+                        height={225}
+                        className='w-fit hover:scale-[95%] transition-all ease-in flex-1 last:grow object-cover object-center'
+                        />
+                    )
+                })}
+                </div>
+                <div className='w-2/3 text-center text-white -translate-y-14 text-base italic last:text-secondary'>
+                    {title}
+                </div>
+            </>
+        )
+    }
+    
+
     return(
         <>
-            <div className="w-screen h-fit flex justify-between px-20 pt-32 pb-24 items-center bg-secondary relative">
+            <div className="w-screen h-screen flex justify-between px-20 pt-32 pb-24 items-center bg-secondary relative">
                 <div className="text-white -bottom-0 relative w-[45%]">
                     <h1 className="leading-[0.8] text-8xl">Seas of<br/><b>Impact.</b></h1>
                 </div>
-                <Image
-                    src={'https://terra-segara-asset.s3.ap-southeast-2.amazonaws.com/Website+Asset/IMG_5459+1.png'}
-                    width={500}
-                    height={500}
-                    className='rounded-bl-[200px] relative -bottom-0'
+                <TSImg
+                    src={'IMG_5459 1.png'}
+                    width={450}
+                    height={450}
+                    className='rounded-bl-[200px] relative -bottom-0 translate-y-8'
                 />
                 <Image
                     src={'/Object-graphic2 1.png'}
@@ -152,44 +250,25 @@ export default function Gallery(){
                     src={'/Object-graphic0 3.png'}
                     width={125}
                     height={125}
-                    className='absolute right-8 top-20'
+                    className='absolute right-7 top-24'
                 />
                 <Image
                     src={'/Object-graphic0 3.png'}
                     width={125}
                     height={125}
-                    className='absolute right-1/2 bottom-24 translate-x-44'
+                    className='absolute right-1/3 bottom-12 translate-x-0'
                 />
             </div>
             <div className='max-w-screen w-screen h-fit py-20 flex flex-col gap-[72px] justify-center items-center bg-gradient-to-t from-white via-secondary via-50% to-100% text-2xl text-secondary text-center'>
-                <p className='max-w-fit mx-32 translate-y-2 font-bold'>Empowering Local Youth through SCUBA Dive Training Scholarship - Batch 1/2024</p>
-                <div className='flex w-fit h-fit gap-9 items-center justify-center'>
-                    {gallery1.map((e, i)=>{ 
-                        return(<Photos src={e.src} title={e.title} key={i}/>)
-                    })}
-                </div>
-                <p className='max-w-fit mx-40'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."</p>
-            </div>
-            <div className='max-w-full max-h-fit h-fit w-screen py-1'>
-                <div className='mx-10 h-fit w-fit flex flex-wrap justify-stretch gap-4'>
-                    {gallery2.map((e, i)=>{
-                        return(
-                            <Image
-                                key={i}
-                                src={e.src}
-                                width={getRandomInt(200,400)}
-                                height={getRandomInt(200,400)}
-                                alt={e.alt}
-                                placeholder='blur'
-                                blurDataURL={e.blurDataURL}
-                                className='colspan-2 hover:scale-[95%] transition-all ease-in object-center object-cover flex-grow'
-                            />
-                        )
-                    })}
-                </div>
-                <p className='w-fit mx-20 text-2xl text-secondary text-center my-16'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+                <h1 className='max-w-fit mx-32 translate-y-2 font-bold'>Empowering Local Youth through SCUBA Dive Training Scholarship - Batch 1/2024</h1>
+                <GalleryPhoto gallery={SCUBAGallery1} title={'Opening ceremony attended by youth participants, and partners from Nusa Penida Dive Center, Nuansa Pulau, and SMAN 1 Nusa Penida'}/>
+                <GalleryPhoto gallery={SCUBAGallery2} title={'Dive Theory Session'}/>
+                <GalleryPhoto gallery={SCUBAGallery3} title={'Confined water session'}/>
+                <GalleryPhoto gallery={SCUBAGallery4} title={'Open water session'}/>
+                <GalleryPhoto gallery={SCUBAGallery5} title={'Monitoring and evaluation process attended by participants and YTSI team'}/>
+                <GalleryPhoto gallery={SCUBAGallery6} title={'Closing and graduation ceremony attended by participants, volunteer instructors and partners in February '}/>
+                <Photos src={volunteer} title={'Thanks to our amazing volunteer instructor!'} />
+                <GalleryPhoto gallery={BeachCleaning} title={'Beach Cleaning with local children and YTSI team'}/>
             </div>
         </>
     )

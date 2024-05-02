@@ -20,12 +20,12 @@ const Founder = [
     {
         name: "Ali Rohmat and Rudi",
         desc: 'Seasoned entrepreneurs who have successfully managed Nusa Penida Dive Center (NPDC) for over a decade. Through their business, they have not only cultivated a thriving diving enterprise but have also played a significant role in empowering locals to enter the diving industry in Nusa Penida. Their commitment to excellence is encapsulated in the words of Maya Angelou: "Do the best you can until you know better. Then when you know better, do better."',
-        img: '/BG 1.png'
+        img: '/DOS03604.JPG'
     },
     {
-        name: "Prisilia Resolute",
-        desc: "PADI Scuba Diving Instructor, sociologist and development practitioner who has been engaged in several action research projects on waste management and community development in several areas in Indonesia. Her favorite quote is “We must create the living interest in the/our work” - Bradbury & Reason, 2001",
-        img: '/BG 1.png'
+        name: "Dimas P. Ratnakusumah",
+        desc: 'A distinguished Scuba Diving Instructor certified by both PADI and SSI, boasting nearly a decade of extensive experience in the diving industry. He has operated in various renowned dive sites across Indonesia, including Labuan Bajo, Derawan, and presently, Nusa Penida. His dedication extends beyond professional expertise; he harbors a fervent passion for imparting scuba diving skills to the younger generation. Reflecting his commitment to sustainability and altruism, Dimas embraces the mantra: "Live simply so others can simply live."',
+        img: '/DOS03597.JPG'
     },
 ]
 
@@ -36,13 +36,13 @@ export default function AboutUs() {
             src={'/Object-graphic4 1.png'}
             width={120}
             height={120}
-            className="absolute left-0 top-3/4 z-10 translate-y-20"
+            className="absolute left-0 top-full z-10"
         />
         <Image
             src={'/Object-graphic3 1.png'}
             width={200}
             height={200}
-            className="absolute right-0 top-2/3 z-10 translate-y-28"
+            className="absolute right-0 top-full z-10 -translate-y-8"
         />
         <div className="w-screen h-screen">
             <Image
@@ -52,11 +52,11 @@ export default function AboutUs() {
                 fill
                 className="object-cover object-center"
             />
-            <div className="absolute w-full h-full bg-gradient-to-t from-white to-40% text-center text-secondary text-8xl font-bold grid content-end">
-                About Us
-            </div>
         </div>
-        <div className="max-w-full h-fit py-12 mx-auto w-2/3 text-justify text-secondary text-xl">
+        <div className="absolute w-full h-screen bg-gradient-to-t from-white from-20% to-80% text-center text-secondary text-8xl font-bold grid content-end top-24">
+                About Us
+        </div>
+        <div className="mt-24 max-w-full h-fit py-12 mx-auto w-2/3 text-justify text-secondary text-xl">
             <h1 className="text-4xl font-bold text-center">Who Are We?</h1>
             <br />
             Yayasan Terra Segara Indonesia (YTSI) is a non-profit organization based in Nusa Penida, Bali. Its name is derived from the Sanskrit words "Terra'' which means land and "Segara'' which means sea. Our first point of departure is we believe that the dynamics of land, sea, and the people—all constituent parts of the earth—impact one another as a single, interconnected whole. Thus, as a responsible human being we have the prominent responsibility to maintain the balance between the two. The founders of YTSI are all diving instructors whom have been living and working in Nusa Penida Marine Protected Area (MPA) for more than five years.

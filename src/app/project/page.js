@@ -143,8 +143,8 @@ export default function Project() {
                 blurDataURL="/images/projects-hero-small.png"
                 className="object-cover object-center"
             />
-            <div className="absolute bottom-0 w-full h-full text-white flex flex-row font-bold justify-start items-end">
-                <div className="relative left-6 bottom-20 flex flex-col">
+            <div className="absolute left-28 bottom-16 w-full h-full text-white flex flex-row font-bold items-end">
+                <div className="relative flex flex-col">
                     <div className="text-6xl font-normal inline-flex items-center gap-x-10">
                         Projects <div className="w-[170px] h-1 bg-white"/>
                     </div>
@@ -154,8 +154,8 @@ export default function Project() {
                 </div>
             </div>
         </div>
-        <div className="max-w-full w-screen h-fit py-24 px-24">
-            <SearchBar />\
+        <div className="w-screen h-fit py-24 px-24">
+            <SearchBar />
             {example.map((e,i)=>{
                 return(
                     <WorkProject key={i} props={e}/>

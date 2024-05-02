@@ -13,7 +13,7 @@ export default function Footer() {
                 </p>
                 <ButtonDefault text='Join Us!' url={'/'} variant={2}/>
               </div>
-              <div className="w-1 h-2/3 bg-white col-span-1 sm:-translate-x-10"/>
+              <div className="w-1 h-full bg-white col-span-1 sm:-translate-x-10"/>
               <div className="w-fit h-fit grid-flow-row grid gap-0 col-span-5 text-xl text-center max-sm:scale-50">
                 <div className="flex justify-center gap-3">
                   <Link href={'https://www.instagram.com/terrasegaraindonesia'} target="__blank" className="hover:scale-90 transition-all"> 
@@ -51,7 +51,7 @@ export default function Footer() {
                 </div>
                 <p className="mt-5 mb-1.5">Let's stay connected!</p>
                 <ButtonDefault text='Subscribe' url='/' variant={2}/>
-                <p>lorem@ipsum.org</p>
+                <p>hello@terrasegara.org</p>
                 <p className="mt-5">© 2024 Terra Segara</p>
                 <p>Nusa Penida, Bali, Indonesia</p>
               </div>
