@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -48,3 +52,6 @@ body {
   color: #B75444 !important
  }
 
+ th, td {
+  @apply p-1
+ }

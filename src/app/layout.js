@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "./globals.css";
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const signika = Signika({
   subsets: ['latin'],
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
       <body className={`${signika.className} sm:max-w-5xl max-w-sm flex flex-col items-center mx-auto bg-gradient-to-b from-white to-white overflow-x-hidden`}>
           <Navbar />
           {children}
+          <ScrollToTop />
           <footer>
             <Footer />
           </footer>

@@ -187,13 +187,13 @@ const gallery2 = [
 
 const Photos = ({src, title})=>{
     return(
-        <div className='aspect-square w-96 flex flex-col items-center text-xl text-center text-secondary bg-white border-4 border-secondary shadow-lg gap-4 justify-center'>
+        <div className='aspect-square w-96 flex flex-col items-center text-base text-center text-secondary bg-white border-4 border-secondary shadow-lg gap-4 justify-center'>
             <Image
                 src={src}
-                width={350}
-                height={250}
+                width={300}
+                height={300}
                 alt={title}
-                className='object-cover '
+                className='object-cover aspect-square object-center'
             />
             <p>{title}</p>
         </div>

@@ -31,10 +31,18 @@ function SliderHome({ content }) {
     autoplay: true,
     speed: 1000,
     autoplaySpeed: 5000,
+    responsive: [
+      {
+        breakpoint: 640,
+        settings: {
+          centerMode: false
+        }
+      }
+    ]
   };
   return (
-    <div className="h-[500px] w-full mx-auto rounded-xl transition-all relative slider-container ">
-      <div className="flex absolute h-full w-full z-10 justify-between pointer-events-none">
+    <div className="h-[500px] w-full mx-auto rounded-xl transition-all relative slider-container">
+      <div className="flex absolute h-full w-full z-10 justify-between pointer-events-none max-sm:invisible visible">
         <div className="h-full w-1/3 bg-gradient-to-r from-white to-50%"/>
         <div className="h-full w-1/3 bg-gradient-to-l from-white to-50%"/>
       </div>
@@ -43,18 +51,18 @@ function SliderHome({ content }) {
       }} {...settings} >
         {content.map((e, i)=>{
             return(
-                <div key={i} className="h-[500px] w-full text-center relative focus:outline-0 border-[16px] border-white rounded-[48px]">
+                <div key={i} className="h-[500px] max-sm:h-56 w-full text-center relative focus:outline-0 border-[16px] border-white rounded-[48px] max-sm:rounded-xl">
                     <Image
                         src={e.image}
                         placeholder="blur"
                         blurDataURL={e.imageSmall}
                         fill
                         alt={e.title}
-                        className="object-cover object-bottom h-full mx-auto -z-10"
+                        className="object-cover object-bottom h-full mx-auto -z-10 max-sm:rounded-xl"
                     />
-                    <div className="absolute bottom-0 pb-5 w-full bg-gradient-to-t from-secondary -z-10">
-                        <h1 className="text-3xl font-bold">{e.title}</h1>
-                        <h3 className="text-xl">{e.date}</h3>
+                    <div className="absolute bottom-0 pb-5 max-sm:pb-2 w-full bg-gradient-to-t from-secondary -z-10 rounded-b-xl">
+                        <h1 className="text-3xl max-sm:text-xl font-bold">{e.title}</h1>
+                        <h3 className="text-xl max-sm:text-xs">{e.date}</h3>
                     </div>
                 </div>
             )

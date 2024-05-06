@@ -36,8 +36,8 @@ export default function Donate(){
                                 <input type="email" name="email" className="border-[3px] border-secondary shadow-md rounded-2xl h-fit w-50 py-2 px-5 placeholder:text-secondary text-secondary text-base" placeholder="Your Email"/> 
                             </div>
                             <label className="text-xl">Donation Amount</label>
-                            <select name="amount" className="border-[3px] border-secondary shadow-md rounded-2xl h-fit w-36 py-2 px-5 placeholder:text-secondary text-secondary text-base">
-                                <option value="" disabled selected>Click here</option>
+                            <select name="amount" defaultValue={""} className="border-[3px] border-secondary shadow-md rounded-2xl h-fit w-36 py-2 px-5 placeholder:text-secondary text-secondary text-base">
+                                <option value="" disabled>Click here</option>
                                 <option value={5}>5$</option>
                                 <option value={10}>10$</option>
                                 <option value={15}>15$</option>
