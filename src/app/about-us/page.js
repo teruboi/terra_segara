@@ -62,39 +62,39 @@ export default function AboutUs() {
             Yayasan Terra Segara Indonesia (YTSI) is a non-profit organization based in Nusa Penida, Bali. Its name is derived from the Sanskrit words "Terra'' which means land and "Segara'' which means sea. Our first point of departure is we believe that the dynamics of land, sea, and the people—all constituent parts of the earth—impact one another as a single, interconnected whole. Thus, as a responsible human being we have the prominent responsibility to maintain the balance between the two. The founders of YTSI are all diving instructors whom have been living and working in Nusa Penida Marine Protected Area (MPA) for more than five years.
         </div>
         <div className="w-screen h-fit py-12 text-center text-secondary text-2xl">
-            <h1 className="text-4xl font-bold">Founder</h1>
+            <h1 className="text-4xl max-sm:text-lg font-bold">Founder</h1>
             <SliderFounder content={Founder} />
         </div>
-        <div className="w-2/3 h-fit mt-10 text-justify text-secondary text-xl">
-            <h1 className="text-4xl font-bold mb-12 text-center">What we do?</h1>
+        <div className="w-2/3 h-fit mt-10 text-justify text-secondary text-xl max-sm:text-[8px] max-sm:leading-snug max-sm:w-4/5">
+            <h1 className="text-4xl font-bold text-center max-sm:text-lg">What we do?</h1>
             <Image
                 src={'/4 1.png'}
                 width={1280}
                 height={720}
-                className="mb-12 object-fill"
+                className="my-12 max-sm:my-6 object-fill"
             />
             <p className="">
             We are committed to addressing the challenges of coral degradation and ocean plastic pollution prevalent across the island. However, our primary aim extends beyond mere problem-solving; we are dedicated to instilling a shared sense of urgency and mobilizing collective efforts toward resolution. While these issues may not directly contribute to climate action, our overarching goal is to anchor the discourse of climate change and action in a substantive yet practical manner. Recognizing the global scope of climate change, we emphasize the importance of local engagement, advocating for solutions tailored to our immediate surroundings. To this end, we integrate the concept of cultural preservation, fostering a culturally relevant and accessible approach to climate action.
             </p>
         </div>
-        <div className="w-2/3 h-fit py-12 text-justify text-secondary text-xl mb-10">
-            <h1 className="text-4xl font-bold mb-12 text-center">How do we work?</h1>
+        <div className="w-2/3 h-fit my-10 text-justify text-secondary text-xl max-sm:text-[8px] max-sm:leading-snug max-sm:w-4/5">
+            <h1 className="text-4xl max-sm:text-lg font-bold text-center">How do we work?</h1>
             <Image
                 src={'/5 1.png'}
                 width={1280}
                 height={720}
-                className="mb-12"
+                className="my-12 max-sm:my-6"
             />
             To effectively advance our overarching objective, we have identified three key focal points:<br /><br />
-            <ol className="list-decimal list-outside text-secondary w-fit flex flex-col mx-auto -translate-x-16">
-                <li className="text-left ml-36">
+            <ol className="list-decimal list-outside text-secondary w-fit flex flex-col mx-auto -translate-x-16 max-sm:-translate-x-4">
+                <li className="text-left ml-36 max-sm:ml-10">
                     <b>Educate</b>: Climate change awareness must be disseminated through various educational avenues, including formal, informal, and non-formal channels. For instance, integrating climate change education into scuba dive training offers a hands-on approach and fosters engagement through experiential learning.                   
                 </li>
-                <li className="text-left ml-36">
+                <li className="text-left ml-36 max-sm:ml-10">
                     <b>Preserve</b>: While climate change predominantly impacts the environment, its adaptation necessitates addressing social and cultural dimensions. Therefore, efforts toward climate change adaptation should prioritize the preservation of local culture by honoring indigenous knowledge and traditional practices.
 
                 </li>
-                <li className="text-left ml-36">
+                <li className="text-left ml-36 max-sm:ml-10">
                     <b>Conserve</b>: By fostering education and cultural preservation, individuals become more cognizant of climate change and its implications, motivating them to actively participate in conservation efforts aimed at safeguarding both natural and cultural heritage.
 
                 </li>

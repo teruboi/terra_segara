@@ -7,7 +7,7 @@ export default function Donate(){
                 src={'/Object-graphic3 2.png'}
                 width={300}
                 height={150}
-                className="absolute left-0 top-1/2 -translate-y-8"
+                className="absolute left-0 top-1/2 -translate-y-8 max-sm:invisible visible"
             />
             <div className="max-w-full w-screen h-fit bg-white flex flex-col text-secondary text-xl mt-28 justify-center gap-y-2 px-10">
                 <h1 className="text-5xl">We can make <span className="font-bold text-7xl">A Difference,</span></h1>

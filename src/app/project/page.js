@@ -134,27 +134,27 @@ const example = [
 export default function Project() {
     return(
         <>
-        <div className="max-w-full max-h-full w-screen h-screen bg-no-repeat bg-cover">
+        <div className="max-w-full max-h-full w-screen h-screen bg-no-repeat bg-cover max-sm:max-h-64">
             <Image
                 src={'/images/projects-hero.png'}
                 fill
                 alt="hero project"
                 placeholder="blur"
                 blurDataURL="/images/projects-hero-small.png"
-                className="object-cover object-center"
+                className="object-cover object-center max-sm:max-h-64"
             />
-            <div className="absolute left-28 bottom-16 w-full h-full text-white flex flex-row font-bold items-end">
+            <div className="absolute left-28 bottom-16 max-sm:top-0 max-sm:left-10 w-full h-full text-white flex flex-row font-bold items-end max-sm:max-h-64">
                 <div className="relative flex flex-col">
-                    <div className="text-6xl font-normal inline-flex items-center gap-x-10">
-                        Projects <div className="w-[170px] h-1 bg-white"/>
+                    <div className="text-6xl max-sm:text-2xl font-normal inline-flex items-center gap-x-10">
+                        Projects <div className="w-[170px] max-sm:w-16 max-sm:-translate-x-8 h-1 max-sm:h-1 bg-white"/>
                     </div>
-                    <div className="text-8xl">
+                    <div className="text-8xl max-sm:text-4xl">
                         Our Work.
                     </div>
                 </div>
             </div>
         </div>
-        <div className="w-screen h-fit py-24 px-24">
+        <div className="w-screen h-fit py-24 px-24 max-sm:px-12">
             <SearchBar />
             {example.map((e,i)=>{
                 return(
