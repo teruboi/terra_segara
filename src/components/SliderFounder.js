@@ -38,7 +38,7 @@ function SliderFounder({ content }) {
     autoplaySpeed: 5000,
   };
   return (
-    <div className="slider-container h-fit w-3/4 mx-auto rounded-xl transition-all relative">
+    <div className="slider-container h-fit w-full mx-auto rounded-xl transition-all relative">
       <Slider ref={slider => {
         sliderRef = slider;
       }} {...settings} >

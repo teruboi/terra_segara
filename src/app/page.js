@@ -32,7 +32,7 @@ const ourWorks = [
 export default function LandingPage() {
   return (
     <>
-      <div className="max-w-screen max-h-fit h-screen max-sm:h-64 w-screen z-0 relative">
+      <div className="max-w-screen max-h-fit h-screen max-[360px]:h-64 w-screen z-0 relative">
           <Image
             src={'/images/home-hero.png'}
             fill={true}
@@ -56,7 +56,7 @@ export default function LandingPage() {
       <div className="w-full h-fit bg-white text-secondary sm:pt-16 pb-32">
         <h1 className="text-center text-2xl max-sm:text-xl">About Us</h1>
         <h1 className="text-center text-5xl max-sm:text-3xl font-bold mb-8 max-sm:mb-4">Welcome to Our Page</h1>  
-        <div className="flex gap-6 max-sm:gap-2 justify-center">
+        <div className="flex gap-20 max-sm:gap-2 justify-center">
           <div className="grid justify-center">
             <Image
               src={'/1.png'}
