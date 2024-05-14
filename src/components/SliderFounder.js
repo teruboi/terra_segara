@@ -38,14 +38,14 @@ function SliderFounder({ content }) {
     autoplaySpeed: 5000,
   };
   return (
-    <div className="slider-container h-fit w-3/4 mx-auto rounded-xl transition-all relative">
+    <div className="slider-container h-fit w-3/4 max-sm:w-11/12 mx-auto rounded-xl transition-all relative">
       <Slider ref={slider => {
         sliderRef = slider;
       }} {...settings} >
         {content.map((e, i)=>{
             return(
                 <div key={i} className="min-h-[360px] max-sm:min-h-[120px] h-fit max-sm:py-5 py-10 text-center relative focus:outline-0 border-[16px] border-white rounded-[48px] bg-primary grid">
-                  <div className="flex h-full w-fit px-10 max-sm:px-5 max-sm:gap-2 gap-6 items-center justify-center">
+                  <div className="flex max-h-32 min-h-32 h-full w-fit px-10 max-sm:px-5 max-sm:gap-2 gap-6 items-center justify-center">
                     <Image
                         src={e.img}
                         height={250}
@@ -53,7 +53,7 @@ function SliderFounder({ content }) {
                         placeholder="blur"
                         blurDataURL={e.img}
                         alt={e.name}
-                        className="object-cover object-center aspect-square rounded-3xl max-sm:w-32"
+                        className="object-cover object-center aspect-square rounded-3xl max-sm:rounded-xl max-sm:w-16"
                     />
                     <div className="w-full">
                         <h1 className="text-3xl max-sm:text-base text-left text-white">{e.name}</h1>

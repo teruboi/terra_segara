@@ -154,7 +154,7 @@ export default function Project() {
                 </div>
             </div>
         </div>
-        <div className="w-screen h-fit py-24 px-24 max-sm:px-12">
+        <div className="w-screen h-fit py-24 px-24 max-sm:px-8">
             <SearchBar />
             {example.map((e,i)=>{
                 return(

@@ -210,13 +210,15 @@ export default function Gallery(){
                 {gallery.map((e, i)=>{
                     console.log(e.src)
                     return(
-                        <Image
-                        key={i}
-                        src={e.src}
-                        width={300}
-                        height={225}
-                        className='w-fit hover:scale-[95%] transition-all ease-in flex-1 last:grow object-cover object-center'
-                        />
+                        <div className='overflow-hidden w-fit h-fit'>
+                            <Image
+                                key={i}
+                                src={e.src}
+                                width={300}
+                                height={225}
+                                className='w-fit hover:scale-110 transition-all ease-in flex-1 last:grow object-cover object-center'
+                                />
+                        </div>
                     )
                 })}
                 </div>
@@ -230,37 +232,37 @@ export default function Gallery(){
 
     return(
         <>
-            <div className="w-screen h-screen flex justify-between px-20 pt-32 pb-24 items-center bg-secondary relative">
+            <div className="w-screen h-screen max-sm:max-h-64 flex justify-between px-20 max-sm:px-4 pt-32 pb-24 items-center bg-secondary relative">
                 <div className="text-white -bottom-0 relative w-[45%]">
-                    <h1 className="leading-[0.8] text-8xl">Seas of<br/><b>Impact.</b></h1>
+                    <h1 className="leading-[0.8] text-8xl max-sm:text-4xl">Seas of<br/><b>Impact.</b></h1>
                 </div>
                 <TSImg
                     src={'IMG_5459 1.png'}
                     width={450}
                     height={450}
-                    className='rounded-bl-[200px] relative -bottom-0 translate-y-8'
+                    className='rounded-bl-[200px] max-sm:rounded-bl-[80px] relative -bottom-0 translate-y-8 max-sm:translate-y-2 max-sm:w-44'
                 />
                 <Image
                     src={'/Object-graphic2 1.png'}
                     width={300}
                     height={300}
-                    className='absolute left-0 bottom-0 translate-y-5'
+                    className='absolute left-0 bottom-0 translate-y-5 hidden'
                 />
                 <Image
                     src={'/Object-graphic0 3.png'}
                     width={125}
                     height={125}
-                    className='absolute right-7 top-24'
+                    className='absolute right-7 top-24 hidden'
                 />
                 <Image
                     src={'/Object-graphic0 3.png'}
                     width={125}
                     height={125}
-                    className='absolute right-1/3 bottom-12 translate-x-0'
+                    className='absolute right-1/3 bottom-12 translate-x-0 hidden'
                 />
             </div>
-            <div className='max-w-screen w-screen h-fit py-20 flex flex-col gap-[72px] justify-center items-center bg-gradient-to-t from-white via-secondary via-50% to-100% text-2xl text-secondary text-center'>
-                <h1 className='max-w-fit mx-32 translate-y-2 font-bold'>Empowering Local Youth through SCUBA Dive Training Scholarship - Batch 1/2024</h1>
+            <div className='max-w-screen w-screen h-fit py-20 max-sm:py-10 flex flex-col gap-[72px] justify-center items-center bg-gradient-to-t from-white via-secondary via-50% to-100% text-2xl max-sm:text-lg text-secondary text-center'>
+                <h1 className='max-w-fit mx-32 max-sm:mx-10 translate-y-2 max-sm:translate-y-0 font-bold'>Empowering Local Youth through SCUBA Dive Training Scholarship - Batch 1/2024</h1>
                 <GalleryPhoto gallery={SCUBAGallery1} title={'Opening ceremony attended by youth participants, and partners from Nusa Penida Dive Center, Nuansa Pulau, and SMAN 1 Nusa Penida'}/>
                 <GalleryPhoto gallery={SCUBAGallery2} title={'Dive Theory Session'}/>
                 <GalleryPhoto gallery={SCUBAGallery3} title={'Confined water session'}/>
