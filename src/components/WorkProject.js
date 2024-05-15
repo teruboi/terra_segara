@@ -21,7 +21,7 @@ export default function WorkProject({ props }){
                 <p className="text-6xl max-sm:text-3xl font-bold max-sm:-mb-2">{dte}</p>
                 <p className="text-3xl max-sm:text-base">{year}</p>
             </div>
-            <div className="col-span-5 text-secondary text-base max-sm:text-xs">
+            <div className="col-span-5 text-secondary text-base max-sm:text-xs pr-10">
                 <h1 className="text-3xl max-sm:text-xl mb-5 max-sm:mb-2">{title}</h1>
                 <div className="leading-snug text-justify">{article}</div>
             </div>

@@ -26,7 +26,7 @@ function SliderHome({ content }) {
     slidesToScroll: 1,
     arrows: false,
     centerMode: true,
-    centerPadding: '100px',
+    centerPadding: '200px',
     className: 'relative',
     autoplay: true,
     speed: 1000,
@@ -51,7 +51,7 @@ function SliderHome({ content }) {
       }} {...settings} >
         {content.map((e, i)=>{
             return(
-                <div key={i} className="h-[500px] max-sm:h-56 w-full text-center relative focus:outline-0 border-[16px] border-white rounded-[48px] max-sm:rounded-xl">
+                <div key={i} className="h-[400px] max-sm:h-56 w-full text-center relative focus:outline-0 border-[16px] border-white rounded-[48px] max-sm:rounded-xl">
                     <Image
                         src={e.image}
                         placeholder="blur"
