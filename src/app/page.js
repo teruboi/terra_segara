@@ -32,7 +32,7 @@ const ourWorks = [
 export default function LandingPage() {
   return (
     <>
-      <div className="max-w-screen max-h-fit h-screen max-[360px]:h-64 w-screen z-0 relative">
+      <div className="max-w-screen max-h-fit sm:h-screen aspect-video max-[360px]:h-64 w-screen z-0 relative">
           <Image
             src={'/images/home-hero.png'}
             fill={true}

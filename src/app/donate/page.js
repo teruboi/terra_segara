@@ -48,6 +48,7 @@ export default function Donate(){
                                 <label className="text-secondary text-xl max-sm:text-sm">I would like to receive updates via email</label>
                             </div>
                             <button type="submit" className="bg-secondary min-w-[220px] max-h-[60px] h-fit w-fit px-10 py-1 text-lg text-white text-center rounded-[32px] transition-all mt-2 shadow-md max-sm:mx-auto">Submit Donation</button>
+                            <p className="text-xs pt-3 font-thin">*If you have trouble with donation kindly contact us by Whatsapp or email</p>
                         </form>
                     </div>
                 </div>
