@@ -45,7 +45,7 @@ export default function LandingPage() {
           src={'/Object-graphic6 1.png'}
           width={180}
           height={180}
-          className="absolute right-0 sm:top-2/3 sm:translate-y-10 top-1/3 translate-y-5 transition-all z-20 max-sm:scale-50 max-sm:translate-x-11 max-sm:invisible visible"
+          className="absolute right-0 sm:top-2/3 sm:translate-y-10 top-1/3 translate-y-5 transition-all z-20 max-sm:scale-50 max-sm:translate-x-11 hidden"
         />
           <div className="absolute top-0 w-full h-full bg-gradient-to-t from-white to-40% flex flex-col justify-center max-sm:px-10 px-20 z-10 gap-20"> 
             <p className="text-8xl max-sm:text-2xl font-normal">Be Part Of</p>
@@ -96,7 +96,7 @@ export default function LandingPage() {
           src={'/Object-graphic5 1.png'}
           width={250}
           height={500}
-          className="absolute left-0 -bottom-24 max-sm:invisible visible"
+          className="absolute left-0 -bottom-24 hidden"
         />
         <div className="group w-80 max-sm:w-32 h-[620px] max-sm:h-[280px] rounded-[40px] max-sm:rounded-xl drop-shadow-md hover:drop-shadow-2xl hover:scale-110 transition-all -z-0 mx-1">
           <Image

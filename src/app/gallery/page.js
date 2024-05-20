@@ -2,7 +2,9 @@
 
 import { TSImg } from '@/components/TSImg';
 import Image from 'next/image'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import Slider from "react-slick";
+import { IoMdClose } from "react-icons/io";
 
 function getRandomInt(min, max) {
     const minCeiled = Math.ceil(min);
@@ -187,43 +189,109 @@ const gallery2 = [
 
 const Photos = ({src, title})=>{
     return(
-        <div className='aspect-square w-96 flex flex-col items-center text-base text-center text-secondary bg-white border-4 border-secondary shadow-lg gap-4 justify-center'>
-            <Image
-                src={src}
-                width={300}
-                height={300}
-                alt={title}
-                className='object-cover aspect-square object-center'
-            />
+        <div className='aspect-square w-96 flex flex-col items-center text-base text-center text-secondary bg-white border-4 border-secondary shadow-lg gap-4 justify-center py-4'>
+            <div className='w-11/12 overflow-hidden'>
+                <Image
+                    src={src}
+                    width={500}
+                    height={500}
+                    alt={title}
+                    className='transition-all object-cover aspect-square object-center hover:scale-110'
+                />
+            </div>
             <p>{title}</p>
         </div>
     )
 }
 
-export default function Gallery(){
-    const [open, setOpen] = useState(false)
+const ImgGallery = ({gallery}) => {
+    const settings = {
+        customPaging: function(i) {
+            return (
+                <a>
+                    <Image
+                        src={gallery[i].src}
+                        width={300}
+                        height={300}
+                        className={`object-cover object-center aspect-square w-[${1/gallery.length}]`}  
+                    />
+                </a>
+            )
+        },
+        dots: true,
+        dotsClass: 'slick-dots slick-thumb',
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        className: 'mx-auto w-full py-5'
+    }
 
+    return (
+        <div className='slider-container'>
+            <Slider {...settings}>
+                {gallery.map((e, i)=>{
+                    return(
+                        <div className='w-full'>
+                            <Image
+                                src={e.src}
+                                width={600}
+                                height={600}
+                                alt={e.title}
+                                className={`mx-auto object-cover object-center h-fit w-fit`}
+                            />
+                        </div>
+                    )
+                })}
+            </Slider>
+        </div>
+    )
+}
+
+export default function Gallery(){
     const GalleryPhoto = ({ gallery, title }) => {
+        const [open, setOpen] = useState(false)
+
+        const handleClick = () => {
+            setOpen(!open)
+        }
         return(
             <>
-                <div className='w-full h-fit flex flex-wrap px-10 gap-2'>
+                {/* <div className='w-full h-fit flex flex-wrap px-10 gap-2'>
                 {gallery.map((e, i)=>{
                     console.log(e.src)
                     return(
-                        <div className='overflow-hidden w-fit h-fit'>
+                        <div className='overflow-hidden w-fit h-fit flex-1 last:grow' key={i}>
                             <Image
-                                key={i}
-                                src={e.src}
+                                {...e}
                                 width={300}
                                 height={225}
-                                className='w-fit hover:scale-110 transition-all ease-in flex-1 last:grow object-cover object-center'
+                                className='hover:scale-110 transition-all ease-in  object-cover object-center'
                                 />
                         </div>
                     )
                 })}
+                </div> */}
+                <div className='aspect-video w-3/5 mx-auto bg-primary overflow-hidden rounded-2xl relative group' onClick={handleClick}>
+                    <Image
+                        {...gallery[0]}
+                        fill
+                        className='group-hover:scale-110 w-full aspect-video transition-all ease-in object-cover object-center group-hover:brightness-50 group-hover:blur-sm'
+                    />
+                    <div className='absolute w-2/3 h-fit top-1/2 -translate-y-[50%] left-1/2 -translate-x-[50%] group-hover:text-white group-hover:block hidden transition-all leading-relaxed cursor-pointer text-xl'>
+                        <b>{title}</b>
+                    </div>
                 </div>
-                <div className='w-2/3 text-center text-white -translate-y-14 text-base italic last:text-secondary'>
+                {/* <div className='w-2/3 text-center text-white -translate-y-14 text-base last:text-secondary'>
                     {title}
+                </div> */}
+                <div id='modal' className={`transition-all fixed left-0 top-0 w-full h-full bg-[#000000] bg-opacity-90 z-[1] overflow-hidden ${open ? 'block' : 'hidden'}`}>
+                    <div id='modalContent' className='relative w-2/3 mx-auto top-0 pt-7 pb-5'>
+                        <div onClick={handleClick} className='absolute right-0 top-3 w-fit h-fit aspect-square  z-20 hover:scale-110 hover:outline-4'>
+                            <IoMdClose className='text-white text-3xl'/>
+                        </div>
+                        <ImgGallery gallery={gallery}/>
+                    </div>
                 </div>
             </>
         )
