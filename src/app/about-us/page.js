@@ -42,7 +42,7 @@ export default function AboutUs() {
             src={'/Object-graphic3 1.png'}
             width={200}
             height={200}
-            className="absolute right-0 top-full z-10 -translate-y-8 max-sm:invisible visible"
+            className="absolute right-0 top-full z-10 -translate-y-8 visible"
         />
         <div className="w-screen h-screen max-sm:max-h-64">
             <Image
