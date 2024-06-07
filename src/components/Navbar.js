@@ -44,7 +44,7 @@ export default function Navbar() {
             <Image
               src={(pathname === '/project') && scrollY <= 0 ? TSLogo2 : TSLogo1}
               alt="Terra Segara"
-              className={`w-28 max-sm:w-12 transition-all ${(pathname === '/project') && scrollY <= 0 ? '-translate-y-1' : ''}`}
+              className={`w-28 translate-x-5 max-sm:w-12 transition-all ${(pathname === '/project') && scrollY <= 0 ? '-translate-y-1' : ''}`}
             />
           </Link>
           <div className={`gap-5 max-sm:gap-2 flex max-sm:text-[10px] text-2xl`}>

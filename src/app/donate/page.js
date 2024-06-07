@@ -9,7 +9,7 @@ export default function Donate(){
                 height={150}
                 className="absolute left-0 top-1/2 -translate-y-8 invisible"
             />
-            <div className="max-w-full w-screen h-fit bg-white flex flex-col text-secondary text-xl max-sm:text-xs mt-28 justify-center gap-y-2 px-10">
+            <div className="max-w-full w-screen h-fit bg-white flex flex-col text-secondary text-xl max-sm:text-xs mt-44 justify-center gap-y-2 px-28 max-sm:px-10">
                 <h1 className="text-5xl max-sm:text-xl">We can make <span className="font-bold text-7xl max-sm:text-2xl">A Difference,</span></h1>
                 <Image
                     src={'/crystal bay 1.png'}
@@ -19,7 +19,7 @@ export default function Donate(){
                     className="rounded-3xl max-sm:rounded-xl"
                 />
                 <p className="font-bold text-7xl text-right max-sm:text-2xl">Together.</p>
-                <p className="my-5 text-justify">
+                <p className="mb-5 mt-28 text-justify">
                 Welcome to our donation page! Your support is invaluable in helping us achieve our mission and make a meaningful impact in the lives of those we serve. With your generous contributions, we can continue to provide essential resources, support, and opportunities to those in need. Whether you choose to donate once or become a recurring donor, every contribution brings us closer to creating positive change and building a better future for all. 
                 <br/><br/>
                 Thank you for joining us in our journey to make a difference! Your generosity today is a beacon of hope for a brighter tomorrow.
