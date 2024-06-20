@@ -1,12 +1,10 @@
 "use client"
 
 import React, { useRef } from "react";
-import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
-import { BiSolidLeftArrow, BiSolidRightArrow } from "react-icons/bi";
-import { BsChatDots } from "react-icons/bs";
+import TSImg from "./TSImg";
 
 function SliderHome({ content }) {
     let sliderRef = useRef(null);
@@ -52,10 +50,8 @@ function SliderHome({ content }) {
         {content.map((e, i)=>{
             return(
                 <div key={i} className="h-[400px] max-sm:h-56 w-full text-center relative focus:outline-0 border-[16px] border-white rounded-[48px] max-sm:rounded-xl">
-                    <Image
+                    <TSImg
                         src={e.image}
-                        placeholder="blur"
-                        blurDataURL={e.imageSmall}
                         fill
                         alt={e.title}
                         className="object-cover object-bottom h-full mx-auto -z-10 max-sm:rounded-xl"

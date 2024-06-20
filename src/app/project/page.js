@@ -1,6 +1,7 @@
 import Image from "next/image";
 import WorkProject from "@/components/WorkProject";
 import SearchBar from "@/components/SearchBar";
+import TSImg from "@/components/TSImg";
 
 const example = [
     {
@@ -135,12 +136,10 @@ export default function Project() {
     return(
         <>
         <div className="max-w-full max-h-full w-screen h-screen bg-no-repeat bg-cover max-sm:max-h-64">
-            <Image
-                src={'/images/projects-hero.png'}
-                fill
+            <TSImg
+                src={'projects-hero.png'}
+                fill={true}
                 alt="hero project"
-                placeholder="blur"
-                blurDataURL="/images/projects-hero-small.png"
                 className="object-cover object-center max-sm:max-h-64"
             />
             <div className="absolute left-28 bottom-16 max-sm:top-0 max-sm:left-10 w-full h-full text-white flex flex-row font-bold items-end max-sm:max-h-64">

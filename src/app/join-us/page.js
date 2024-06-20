@@ -54,7 +54,7 @@ export default function JoinUs() {
                 @terrasegaraindonesia
             </div>
         </div>
-        <div className="max-w-fit w-screen h-fit mb-20 px-60 max-sm:px-8">
+        <div className="max-w-fit w-screen h-fit mb-20 px-60 max-sm:px-8 hidden">
             <h1 className="text-secondary text-6xl max-sm:text-3xl font-bold text-right mb-5">What Our Partners Said</h1>
             <div className="h-fit flex gap-x-9 max-sm:gap-x-3 justify-center items-center">
                 <Partners partner={dummy} />

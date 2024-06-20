@@ -15,32 +15,32 @@ function getRandomInt(min, max) {
 //Opening ceremony attended by youth participants, and partners from Nusa Penida Dive Center, Nuansa Pulau, and SMAN 1 Nusa Penida
 const SCUBAGallery1 = [
     {
-        src: '/DOS02590.JPG',
+        src: 'DOS02590.JPG',
     },
     {
-        src: '/DOS02585.JPG',
+        src: 'DOS02585.JPG',
     },
     {
-        src: '/DOS02647.JPG',
+        src: 'DOS02647.JPG',
     },
     {
-        src: '/DOS02568.JPG',
+        src: 'DOS02568.JPG',
     },
     {
-        src: '/DOS02596.JPG',
+        src: 'DOS02596.JPG',
     },
 ]
 
 //Dive Theory Session
 const SCUBAGallery2 = [
     {
-        src: '/DOS02740.JPG',
+        src: 'DOS02740.JPG',
     },
     {
-        src: '/DOS02816.JPG',
+        src: 'DOS02816.JPG',
     },
     {
-        src: '/DOS03326.JPG',
+        src: 'DOS03326.JPG',
     }
 ]
 
@@ -49,136 +49,130 @@ const SCUBAGallery2 = [
 //Confined water session
 const SCUBAGallery3 = [
     {
-        src: '/DOS02695.JPG',
+        src: 'DOS02695.JPG',
     },
     {
-        src: '/DOS02682.JPG',
+        src: 'DOS02682.JPG',
     },
     {
-        src: '/DOS02690.JPG',
+        src: 'DOS02690.JPG',
     }
 ]
 
 //Open water session
 const SCUBAGallery4 = [
     {
-        src: '/DOS03270.JPG',
+        src: 'DOS03270.JPG',
     },
     {
-        src: '/DOS03256.JPG',
+        src: 'DOS03256.JPG',
     },
     {
-        src: '/DOS03126.JPG',
+        src: 'DOS03126.JPG',
     },
     {
-        src: '/DOS03115.JPG',
+        src: 'DOS03115.JPG',
     },
     {
-        src: '/DOS03231.JPG',
+        src: 'DOS03231.JPG',
     }
 ]
 
 //Monitoring and evaluation process attended by participants and YTSI team
 const SCUBAGallery5 = [
     {
-        src: '/DOS03425.JPG',
+        src: 'DOS03425.JPG',
     },
     {
-        src: '/DOS03430.JPG',
+        src: 'DOS03430.JPG',
     },
     {
-        src: '/DOS03439.JPG',
+        src: 'DOS03439.JPG',
     },
     {
-        src: '/DOS03450.JPG',
+        src: 'DOS03450.JPG',
     },
     {
-        src: '/DOS03459.JPG',
+        src: 'DOS03459.JPG',
     }
 ]
 
 //Closing and graduation ceremony attended by participants, volunteer instructors and partners in February 
 const SCUBAGallery6 = [
     {
-        src: '/DOS03701.JPG',
+        src: 'DOS03701.JPG',
     },
     {
-        src: '/DOS03664.JPG',
+        src: 'DOS03664.JPG',
     },
     {
-        src: '/DOS03712.JPG',
+        src: 'DOS03712.JPG',
     },
     {
-        src: '/DJI_0182.JPG',
+        src: 'DJI_0182.JPG',
     }
 ]
 
 //Thanks to our amazing volunteer instructor!
-const volunteer = '/DOS02583.JPG'
+const volunteer = 'DOS02583.JPG'
 
 //Beach Cleaning with local children and YTSI team
 const BeachCleaning = [
     {
-        src: '/IMG_5460.JPG',
+        src: 'IMG_5460.JPG',
     },
     {
-        src: '/IMG_5462.JPG',
+        src: 'IMG_5462.JPG',
     },
     {
-        src: '/IMG_5464.JPG',
+        src: 'IMG_5464.JPG',
     },
     {
-        src: '/IMG_5456.JPG',
+        src: 'IMG_5456.JPG',
     },
     {
-        src: '/IMG_0328.jpg',
+        src: 'IMG_0328.jpg',
     }
 ]
 
 const gallery1 = [
     {
-        src: 'https://terra-segara-asset.s3.ap-southeast-2.amazonaws.com/Website+Asset/IMG_5423.png',
+        src: 'IMG_5423.png',
         title: 'Lorem Ipsum'
     },
     {
-        src: 'https://terra-segara-asset.s3.ap-southeast-2.amazonaws.com/Website+Asset/IMG_5446.png',
+        src: 'IMG_5446.png',
         title: 'Lorem Ipsum'
     },
     {
-        src: 'https://terra-segara-asset.s3.ap-southeast-2.amazonaws.com/Website+Asset/IMG_5462.png',
+        src: 'IMG_5462.png',
         title: 'Lorem Ipsum'
     },
 ]
 
 const gallery2 = [
     {
-        src: '/IMG_5417.png',
-        blurDataURL: '/IMG_5417_small.png',
+        src: 'IMG_5417.png',
         alt: 'Lorem Ipsum',
     },
     {
-        src: '/IMG_5443.png',
-        blurDataURL: '/IMG_5443_small.png',
+        src: 'IMG_5443.png',
         alt: 'Lorem Ipsum',
     },
     {
-        src: '/IMG_5452 1.png',
-        blurDataURL: '/IMG_5452 1_small.png',
+        src: 'IMG_5452 1.png',
         alt: 'Lorem Ipsum',
     },
     {
-        src: '/IMG_5460.png',
-        blurDataURL: '/IMG_5460_small.png',
+        src: 'IMG_5460.png',
         alt: 'Lorem Ipsum',
     },
     {
-        src: '/IMG_5464.png',
-        blurDataURL: '/IMG_5464_small.png',
+        src: 'IMG_5464.png',
         alt: 'Lorem Ipsum',
     },
     {
-        src: '/IMG_5465.png',
-        blurDataURL: '/IMG_5465_small.png',
+        src: 'IMG_5465.png',
         alt: 'Lorem Ipsum',
     },
 ]
@@ -191,7 +185,7 @@ const Photos = ({src, title})=>{
     return(
         <div className='aspect-square w-96 flex flex-col items-center text-base text-center text-secondary bg-white border-4 border-secondary shadow-lg gap-4 justify-center py-4'>
             <div className='w-11/12 overflow-hidden'>
-                <Image
+                <TSImg
                     src={src}
                     width={500}
                     height={500}
@@ -209,7 +203,7 @@ const ImgGallery = ({gallery}) => {
         customPaging: function(i) {
             return (
                 <a>
-                    <Image
+                    <TSImg
                         src={gallery[i].src}
                         width={300}
                         height={300}
@@ -233,7 +227,7 @@ const ImgGallery = ({gallery}) => {
                 {gallery.map((e, i)=>{
                     return(
                         <div className='w-full'>
-                            <Image
+                            <TSImg
                                 src={e.src}
                                 width={600}
                                 height={600}
@@ -273,9 +267,9 @@ export default function Gallery(){
                 })}
                 </div> */}
                 <div className='aspect-video w-3/5 mx-auto bg-primary overflow-hidden rounded-2xl relative group' onClick={handleClick}>
-                    <Image
+                    <TSImg
                         {...gallery[0]}
-                        fill
+                        fill={true}
                         className='group-hover:scale-110 w-full aspect-video transition-all ease-in object-cover object-center group-hover:brightness-50 group-hover:blur-sm'
                     />
                     <div className='absolute w-2/3 h-fit top-1/2 -translate-y-[50%] left-1/2 -translate-x-[50%] group-hover:text-white group-hover:block hidden transition-all leading-relaxed cursor-pointer text-xl'>

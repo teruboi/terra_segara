@@ -1,6 +1,7 @@
 //Landing Page
 import ButtonDefault from "@/components/Button";
 import SliderHome from "@/components/SliderHome";
+import TSImg from "@/components/TSImg";
 import Image from "next/image";
 
 export const metadata = {
@@ -10,20 +11,17 @@ export const metadata = {
 
 const ourWorks = [
   {
-    image: '/IMG_5465.png',
-    imageSmall: '/IMG_5465_small.png',
+    image: 'IMG_5465.png',
     title: 'Beach Cleaning',
     date: 'January 7, 2024'
   },
   {
-    image: '/IMG_5464.png',
-    imageSmall: '/IMG_5464_small.png',
+    image: 'IMG_5464.png',
     title: 'Beach Cleaning',
     date: 'January 7, 2024'
   },
   {
-    image: '/IMG_5460.png',
-    imageSmall: '/IMG_5460_small.png',
+    image: 'IMG_5460.png',
     title: 'Beach Cleaning',
     date: 'January 7, 2024'
   }
@@ -33,12 +31,11 @@ export default function LandingPage() {
   return (
     <>
       <div className="max-w-screen max-h-fit sm:h-screen aspect-video max-[360px]:h-64 w-screen z-0 relative">
-          <Image
-            src={'/images/home-hero.png'}
+          <TSImg
+            src={'home-hero.png'}
             fill={true}
             alt="hero home"
             placeholder="blur"
-            blurDataURL="/images/home-hero-small.png"
             className="transition-all object-cover w-screen"
           />
         <Image
@@ -58,20 +55,16 @@ export default function LandingPage() {
         <h1 className="text-center text-5xl max-sm:text-3xl font-bold mb-8 max-sm:mb-4">Welcome to Our Page</h1>  
         <div className="flex gap-20 max-sm:gap-2 justify-center">
           <div className="grid justify-center">
-            <Image
-              src={'/1.png'}
-              placeholder="blur"
-              blurDataURL="/1 small(2).png"
+            <TSImg
+              src={'1.png'}
               width={350}
               height={350}
               className="object-contain rounded-3xl mb-3"/>
             <ButtonDefault url={'/about-us'} text={'Who are we?'} variant={1}/>
           </div>
           <div className="grid justify-center">
-            <Image
-                src={'/3.png'}
-                placeholder="blur"
-                blurDataURL="/3 (1).png"
+            <TSImg
+                src={'3.png'}
                 width={350}
                 height={350}
                 className="object-contain rounded-3xl mb-3"
@@ -79,10 +72,8 @@ export default function LandingPage() {
             <ButtonDefault url={'/about-us'} text={'What we do?'} variant={1}/>
           </div>
           <div className="grid justify-center">
-            <Image
-                src={'/2.png'}
-                placeholder="blur"
-                blurDataURL="/2 (1).png"
+            <TSImg
+                src={'2.png'}
                 width={350}
                 height={350}
                 className="object-contain rounded-3xl mb-3" 
@@ -99,8 +90,8 @@ export default function LandingPage() {
           className="absolute left-0 -bottom-24 hidden"
         />
         <div className="group w-80 max-sm:w-32 h-[620px] max-sm:h-[280px] rounded-[40px] max-sm:rounded-xl drop-shadow-md hover:drop-shadow-2xl hover:scale-110 transition-all -z-0 mx-1">
-          <Image
-            src={'/Vision.png'}
+          <TSImg
+            src={'Vision.png'}
             fill
             className="h-full w-full object-cover object-center rounded-[40px] max-sm:rounded-xl"
           />
@@ -111,8 +102,8 @@ export default function LandingPage() {
           </div>
         </div>
         <div className="group w-80 max-sm:w-32 h-[620px] max-sm:h-[280px] rounded-[40px] max-sm:rounded-xl drop-shadow-md hover:drop-shadow-2xl hover:scale-110 transition-all -z-0 mx-1">
-          <Image
-            src={'/Mission.png'}
+          <TSImg
+            src={'Mission.png'}
             fill
             className="h-full w-full object-cover object-center rounded-[40px] max-sm:rounded-xl"
           />
@@ -123,8 +114,8 @@ export default function LandingPage() {
           </div>
         </div>
         <div className="group w-80 max-sm:w-32 h-[620px] max-sm:h-[280px] rounded-[40px] max-sm:rounded-xl drop-shadow-md hover:drop-shadow-2xl hover:scale-110 transition-all -z-0 mx-1">
-          <Image
-            src={'/Value.png'}
+          <TSImg
+            src={'Value.png'}
             fill
             className="h-full w-full object-cover object-center rounded-[40px] max-sm:rounded-xl"
           />

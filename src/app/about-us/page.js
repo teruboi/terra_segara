@@ -1,4 +1,5 @@
 import SliderFounder from "@/components/SliderFounder";
+import { TSImg } from "@/components/TSImg";
 import Image from "next/image";
 
 const Founder = [
@@ -45,11 +46,10 @@ export default function AboutUs() {
             className="absolute right-0 top-full z-10 -translate-y-8 hidden"
         />
         <div className="w-screen h-screen max-sm:max-h-64">
-            <Image
-                src={'/images/about-us-hero.png'}
+            <TSImg
+                src={'about-us-hero.png'}
                 placeholder="blur"
-                blurDataURL="/IMG_0328 1.png"
-                fill
+                fill={true}
                 className="object-cover object-center max-sm:max-h-64"
             />
         </div>
@@ -67,8 +67,8 @@ export default function AboutUs() {
         </div>
         <div className="w-2/3 h-fit mt-10 text-justify text-secondary text-xl max-sm:text-xs max-sm:leading-snug max-sm:w-4/5">
             <h1 className="text-4xl font-bold text-center max-sm:text-lg">What we do?</h1>
-            <Image
-                src={'/4 1.png'}
+            <TSImg
+                src={'4.png'}
                 width={1280}
                 height={720}
                 className="my-12 max-sm:my-6 object-fill"
@@ -79,8 +79,8 @@ export default function AboutUs() {
         </div>
         <div className="w-2/3 h-fit my-10 text-justify text-secondary text-xl max-sm:text-xs max-sm:leading-snug max-sm:w-4/5">
             <h1 className="text-4xl max-sm:text-lg font-bold text-center">How do we work?</h1>
-            <Image
-                src={'/5 1.png'}
+            <TSImg
+                src={'5.jpg'}
                 width={1280}
                 height={720}
                 className="my-12 max-sm:my-6"

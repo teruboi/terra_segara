@@ -1,3 +1,4 @@
+import TSImg from "@/components/TSImg";
 import Image from "next/image";
 
 export default function Donate(){
@@ -11,12 +12,11 @@ export default function Donate(){
             />
             <div className="max-w-full w-screen h-fit bg-white flex flex-col text-secondary text-xl max-sm:text-xs mt-44 justify-center gap-y-2 px-28 max-sm:px-10">
                 <h1 className="text-5xl max-sm:text-xl">We can make <span className="font-bold text-7xl max-sm:text-2xl">A Difference,</span></h1>
-                <Image
-                    src={'/crystal bay 1.png'}
+                <TSImg
+                    src={'crystal bay.png'}
                     width={1700}
                     height={300}
-                    objectFit="cover"
-                    className="rounded-3xl max-sm:rounded-xl"
+                    className="rounded-3xl max-sm:rounded-xl object-cover"
                 />
                 <p className="font-bold text-7xl text-right max-sm:text-2xl">Together.</p>
                 <p className="mb-5 mt-28 text-justify">
@@ -52,12 +52,11 @@ export default function Donate(){
                         </form>
                     </div>
                 </div>
-                <Image
-                    src={'/11 1.png'}
+                <TSImg
+                    src={'11.png'}
                     width={450}
                     height={450}
-                    objectFit="cover"
-                    className="rounded-[45px] mx-auto translate-x-6 max-sm:hidden"
+                    className="rounded-[45px] mx-auto translate-x-6 max-sm:hidden object-cover"
                 />
             </div>
         </>
