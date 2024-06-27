@@ -1,32 +1,32 @@
 import SliderFounder from "@/components/SliderFounder";
-import { TSImg } from "@/components/TSImg";
+import TSImg from "@/components/TSImg";
 import Image from "next/image";
 
 const Founder = [
     {
         name: "Pascal Sebastian",
         desc: 'A distinguished Scuba Diving Instructor certified by PADI and ADSI, renowned marine biologist, and esteemed coral restoration expert. With a notable track record, he has spearheaded numerous research initiatives and coral restoration projects within the Nusa Penida Marine Protected Area (MPA). His dedication to environmental conservation is encapsulated in his favorite quote: "There is no such thing as a free lunch."',
-        img: '/DOS03602.JPG'
+        img: 'DOS03602.JPG'
     },
     {
         name: "Prisilia Resolute",
         desc: 'An accomplished Scuba Diving Instructor certified by PADI, as well as a distinguished sociologist, Participatory Action Research learner and development practitioner. She has played a pivotal role in numerous action research endeavors focusing on waste management and community development across various regions in Indonesia. Her dedication to her work is epitomized by her favorite quote from Bradbury & Reason, 2001: "We must create a living interest in our work."',
-        img: '/BG 1.png'
+        img: 'BG.png'
     },
     {
         name: "Daniel Sakidin",
         desc: 'A highly esteemed PADI Staff Instructor renowned for his dedication to training and certifying numerous locals from Nusa Penida, enabling him to pursue rewarding careers within the diving industry. With a fervent commitment to fostering inclusivity, he is passionate about affording local communities the opportunity to engage with and explore the diving sector. Reflecting his profound respect for learning, one of his cherished quotes comes from Socrates: "To know, is to know that you know nothing. That is the meaning of true knowledge."',
-        img: '/DOS03601.JPG'
+        img: 'DOS03601.JPG'
     },
     {
         name: "Ali Rohmat and Rudi",
         desc: 'Seasoned entrepreneurs who have successfully managed Nusa Penida Dive Center (NPDC) for over a decade. Through their business, they have not only cultivated a thriving diving enterprise but have also played a significant role in empowering locals to enter the diving industry in Nusa Penida. Their commitment to excellence is encapsulated in the words of Maya Angelou: "Do the best you can until you know better. Then when you know better, do better."',
-        img: '/DOS03604.JPG'
+        img: 'DOS03604.JPG'
     },
     {
         name: "Dimas P. Ratnakusumah",
         desc: 'A distinguished Scuba Diving Instructor certified by both PADI and SSI, boasting nearly a decade of extensive experience in the diving industry. He has operated in various renowned dive sites across Indonesia, including Labuan Bajo, Derawan, and presently, Nusa Penida. His dedication extends beyond professional expertise; he harbors a fervent passion for imparting scuba diving skills to the younger generation. Reflecting his commitment to sustainability and altruism, Dimas embraces the mantra: "Live simply so others can simply live."',
-        img: '/DOS03597.JPG'
+        img: 'DOS03597.JPG'
     },
 ]
 
