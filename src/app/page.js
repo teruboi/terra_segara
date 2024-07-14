@@ -9,6 +9,15 @@ export const metadata = {
   description: "Terra Segara website"
 }
 
+export const viewport = {
+  width: "device-width",
+  height: "device-height",
+  initialScale: 1.0,
+  minimumScale: 1.0,
+  maximumScale: 1.0,
+  userScalable: false
+}
+
 const ourWorks = [
   {
     image: 'IMG_5465.png',
