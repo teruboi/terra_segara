@@ -54,13 +54,13 @@ export default function JoinUs() {
                 @terrasegaraindonesia
             </div>
         </div>
-        <div className="max-w-fit w-screen h-fit mb-20 px-60 max-sm:px-8 hidden">
+        {/* <div className="max-w-fit w-screen h-fit mb-20 px-60 max-sm:px-8 hidden">
             <h1 className="text-secondary text-6xl max-sm:text-3xl font-bold text-right mb-5">What Our Partners Said</h1>
             <div className="h-fit flex gap-x-9 max-sm:gap-x-3 justify-center items-center">
                 <Partners partner={dummy} />
                 <Partners partner={dummy} />
             </div>
-        </div>
+        </div> */}
         <div className="max-w-full w-full h-fit max-sm:px-8 px-20 flex flex-col gap-2">
             <h1 className="text-secondary text-6xl max-sm:text-3xl font-bold">Let's Get in Touch!</h1>
             <p className="text-xl max-sm:text-sm text-secondary leading-tight">We are dedicated to engaging a wide array of stakeholders, including institutions, organizations, and individuals who share our vision and ethos. We welcome any insights, opportunities, or recommendations you may have to offer. Kindly share your name, email address, and any valuable messages you wish to convey in the space provided below.</p>

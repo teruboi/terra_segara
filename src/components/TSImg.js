@@ -23,14 +23,19 @@ async function getBase64(img){
 
 export default async function TSImg({ src, width, height, alt, className, fill }){
     const link = `https://terra-segara-asset.s3.ap-southeast-2.amazonaws.com/images/${src}`
+    const srcSmall = src.substring(0, src.length-4).concat('_small').concat(src.slice(-4))
+    console.log(srcSmall)
+    const linkSmall = `https://terra-segara-asset.s3.ap-southeast-2.amazonaws.com/images/small/${srcSmall}`
+
+    const small = await getBase64(linkSmall)
     
     // const small = await getBase64(link)
     if (fill != undefined){
         return(
             <Image
                 src={link}
-                // placeholder="blur"
-                // blurDataURL={small}
+                placeholder="blur"
+                blurDataURL={small}
                 alt={alt}
                 className={className}
                 fill
@@ -40,8 +45,8 @@ export default async function TSImg({ src, width, height, alt, className, fill }
         return(
             <Image
                 src={link}
-                // placeholder="blur"
-                // blurDataURL={small}
+                placeholder="blur"
+                blurDataURL={small}
                 width={width}
                 height={height}
                 alt={alt}

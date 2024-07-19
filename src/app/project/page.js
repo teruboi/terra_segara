@@ -153,8 +153,8 @@ export default function Project() {
                 </div>
             </div>
         </div>
-        <div className="w-screen h-fit py-24 px-24 max-sm:px-8">
-            <SearchBar />
+        <div className="w-screen h-fit py-24 pl-20 pr-24 max-sm:px-8">
+            <SearchBar className="pl-4"/>
             {example.map((e,i)=>{
                 return(
                     <WorkProject key={i} props={e}/>
