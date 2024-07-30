@@ -12,12 +12,13 @@ export default function Donate(){
             />
             <div className="max-w-full w-screen h-fit bg-white flex flex-col text-secondary text-xl max-sm:text-xs mt-44 justify-center gap-y-2 px-28 max-sm:px-10">
                 <h1 className="text-5xl max-sm:text-xl">We can make <span className="font-bold text-7xl max-sm:text-2xl">A Difference,</span></h1>
-                <TSImg
-                    src={'crystal bay.png'}
-                    width={1700}
-                    height={300}
-                    className="rounded-3xl max-sm:rounded-xl object-cover"
-                />
+                <div className="relative w-full h-44">
+                    <TSImg
+                        src={'crystal bay.png'}
+                        fill={true}
+                        className="rounded-3xl max-sm:rounded-xl object-center object-cover"
+                    />
+                </div>
                 <p className="font-bold text-7xl text-right max-sm:text-2xl">Together.</p>
                 <p className="mb-5 mt-28 text-justify">
                 Welcome to our donation page! Your support is invaluable in helping us achieve our mission and make a meaningful impact in the lives of those we serve. With your generous contributions, we can continue to provide essential resources, support, and opportunities to those in need. Whether you choose to donate once or become a recurring donor, every contribution brings us closer to creating positive change and building a better future for all. 

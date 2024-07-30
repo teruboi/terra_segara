@@ -5,7 +5,7 @@ import TSImg from "@/components/TSImg";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Terra Segara - Coming Soon",
+  title: "Terra Segara",
   description: "Terra Segara website"
 }
 

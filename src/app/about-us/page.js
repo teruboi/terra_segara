@@ -1,6 +1,7 @@
 import SliderFounder from "@/components/SliderFounder";
 import TSImg from "@/components/TSImg";
 import Image from "next/image";
+import AboutUsHero from '../../../public/images/about-us-hero.png';
 
 const Founder = [
     {
@@ -48,9 +49,9 @@ export default function AboutUs() {
         <div className="w-screen h-screen max-sm:max-h-64">
             <TSImg
                 src={'about-us-hero.png'}
-                placeholder="blur"
+                alt="About us hero image"
                 fill={true}
-                className="object-cover object-center max-sm:max-h-64"
+                className={'object-cover object-center'}
             />
         </div>
         <div className="absolute w-full h-screen max-sm:max-h-64 bg-gradient-to-t from-white from-20% to-80% text-center text-secondary text-8xl max-sm:text-4xl font-bold grid content-end top-24 max-sm:top-8">
@@ -67,7 +68,7 @@ export default function AboutUs() {
         </div>
         <div className="w-2/3 h-fit mt-10 text-justify text-secondary text-xl max-sm:text-xs max-sm:leading-snug max-sm:w-4/5">
             <h1 className="text-4xl font-bold text-center max-sm:text-lg">What we do?</h1>
-            <TSImg
+            <TSImg 
                 src={'4.png'}
                 width={1280}
                 height={720}
