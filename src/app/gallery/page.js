@@ -1,6 +1,6 @@
 'use client'
 
-import { TSImg } from '@/components/TSImg';
+import TSImg from '@/components/TSImg';
 import Image from 'next/image'
 import { useEffect, useState } from 'react';
 import Slider from "react-slick";
