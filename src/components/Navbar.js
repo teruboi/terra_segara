@@ -39,7 +39,7 @@ export default function Navbar() {
   });
 
   return(
-      <div id="navbar" className={`${(pathname === '/project') && scrollY <= 0 ? 'text-white ' : 'text-secondary'} ${scrollY <= 0 && pathname !== '/gallery' ? 'bg-opacity-0' : 'bg-opacity-100 shadow-xl'} bg-white fixed top-0 mx-auto transition-all ease-in-out flex h-fit w-full max-sm:w-screen align-middle rounded-b-[30px] max-sm:rounded-b-2xl justify-between z-50 items-center max-sm:px-1 pr-5 max-sm:pt-1 max-sm:pb-1`}>
+      <div id="navbar" className={`${(pathname === '/project') && scrollY <= 0 ? 'text-white ' : 'text-secondary'} ${scrollY <= 0 && pathname !== '/gallery' ? 'bg-opacity-0' : 'bg-opacity-100 shadow-xl'} bg-white fixed top-0 mx-auto transition-all ease-in-out flex h-fit w-full max-sm:w-screen align-middle rounded-b-[30px] max-sm:rounded-b-2xl justify-between z-40 items-center max-sm:px-1 pr-5 max-sm:pt-1 max-sm:pb-1`}>
           <Link href={'/'}> 
             <Image
               src={(pathname === '/project') && scrollY <= 0 ? TSLogo2 : TSLogo1}

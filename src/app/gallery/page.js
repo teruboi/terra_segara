@@ -279,8 +279,8 @@ export default function Gallery(){
                 {/* <div className='w-2/3 text-center text-white -translate-y-14 text-base last:text-secondary'>
                     {title}
                 </div> */}
-                <div id='modal' className={`transition-all fixed left-0 top-0 w-full h-full bg-[#000000] bg-opacity-90 z-[1] overflow-hidden ${open ? 'block' : 'hidden'}`}>
-                    <div id='modalContent' className='relative w-2/3 mx-auto top-0 pt-7 pb-5'>
+                <div id='modal' className={`transition-all fixed left-0 top-0 w-full h-full bg-[#000000] bg-opacity-90 z-50 overflow-hidden ${open ? 'block' : 'hidden'}`}>
+                    <div id='modalContent' className='relative h-4/5 w-2/3 mx-auto bottom-0 pt-20 pb-5'>
                         <div onClick={handleClick} className='absolute right-0 top-3 w-fit h-fit aspect-square  z-20 hover:scale-110 hover:outline-4'>
                             <IoMdClose className='text-white text-3xl'/>
                         </div>
@@ -299,10 +299,10 @@ export default function Gallery(){
                     <h1 className="leading-[0.8] text-8xl max-sm:text-4xl">Seas of<br/><b>Impact.</b></h1>
                 </div>
                 <TSImg
-                    src={'IMG_5459 1.png'}
+                    src={'IMG_5459.jpg'}
                     width={450}
                     height={450}
-                    className='rounded-bl-[200px] max-sm:rounded-bl-[80px] relative -bottom-0 translate-y-8 max-sm:translate-y-2 max-sm:w-44'
+                    className='aspect-square object-cover rounded-bl-[200px] max-sm:rounded-bl-[80px] relative -bottom-0 translate-y-8 max-sm:translate-y-2 max-sm:w-44'
                 />
                 <Image
                     src={'/Object-graphic2 1.png'}

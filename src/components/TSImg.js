@@ -23,7 +23,7 @@ async function getBase64(img){
 
 export default function TSImg({ src, width, height, alt, className, fill }){
     const link = `https://terra-segara-asset.s3.ap-southeast-2.amazonaws.com/images/${src}`
-    console.log(link)
+    // console.log(link)
     const srcSmall = src.substring(0, src.length-4).concat('_small').concat(src.slice(-4))
     // console.log(srcSmall)
     const linkSmall = `https://terra-segara-asset.s3.ap-southeast-2.amazonaws.com/images/small/${srcSmall}`
