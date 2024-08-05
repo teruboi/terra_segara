@@ -89,7 +89,7 @@ export default function LandingPage() {
           height={500}
           className="absolute left-0 -bottom-24 hidden"
         />
-        <div className="group w-80 max-sm:w-28 h-full max-sm:h-[30vh] rounded-[2.5rem] max-sm:rounded-xl drop-shadow-md hover:drop-shadow-2xl hover:scale-110 transition-all -z-0 mx-1">
+        <div className="group w-80 max-sm:w-28 h-[100vh] max-sm:h-[30vh] rounded-[2.5rem] max-sm:rounded-xl drop-shadow-md hover:drop-shadow-2xl hover:scale-110 transition-all -z-0 mx-1">
           <TSImg
             src={'Vision.png'}
             fill
@@ -126,7 +126,7 @@ export default function LandingPage() {
           </div>
         </div>
       </div>
-      <div className="w-full h-fit bg-white pb-16 max-sm:py-0 max-sm:-my-10">
+      <div className="w-full h-fit bg-white mt-52 pb-16 max-sm:py-0 max-sm:-my-10">
         <h1 className="text-secondary text-5xl max-sm:text-xl font-bold text-center">Our Work</h1>
         <SliderHome content={ourWorks} />
       </div>

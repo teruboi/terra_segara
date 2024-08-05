@@ -16,16 +16,16 @@ export default function Navbar() {
   // console.log(pathname);
 
   useEffect(() =>{
-    let prevScrollPos = window.scrollY;
-    window.onscroll = function() {
-      let currScrollPos = window.scrollY
-        if (prevScrollPos > currScrollPos) {
-          document.getElementById("navbar").style.top = "0";
-        } else {
-          document.getElementById("navbar").style.top = "-100%";
-        }
-        prevScrollPos = currScrollPos;
-      }
+    // let prevScrollPos = window.scrollY;
+    // window.onscroll = function() {
+    //   let currScrollPos = window.scrollY
+    //     if (prevScrollPos > currScrollPos) {
+    //       document.getElementById("navbar").style.top = "0";
+    //     } else {
+    //       document.getElementById("navbar").style.top = "-100%";
+    //     }
+    //     prevScrollPos = currScrollPos;
+    //   }
 
     const handleScroll = () => {
       setScrollY(window.scrollY);
