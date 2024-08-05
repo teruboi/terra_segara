@@ -1,4 +1,5 @@
 import { Signika } from "next/font/google";
+import { Viewport } from "next";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./globals.css";
@@ -12,6 +13,13 @@ const signika = Signika({
   display: 'swap',
   variable: '--font-signika'
 })
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1.0,
+  maximumScale: 1.0,
+  userScalable: false
+}
 
 export const metadata = {
   title: "Terra Segara",

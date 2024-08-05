@@ -15,7 +15,7 @@ export default function WorkProject({ props }){
     const title = props.title
     const article = props.article
     return(
-        <div className="grid grid-cols-6 mx-auto py-8 border-b-2 border-secondary last:border-b-0 max-sm:gap-6">
+        <div className="grid grid-cols-6 mx-auto py-8 border-b-2 border-secondary last:border-b-0 max-sm:gap-6 max-sm:translate-x-5">
             <div className="col-span-1 text-center text-primary leading-none">
                 <p className="text-5xl max-sm:text-2xl max-sm:-mb-2">{mon}</p>
                 <p className="text-6xl max-sm:text-3xl font-bold max-sm:-mb-2">{dte}</p>

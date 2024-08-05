@@ -142,7 +142,7 @@ export default function Project() {
                 alt="hero project"
                 className="object-cover object-center max-sm:max-h-64"
             />
-            <div className="absolute left-28 bottom-16 max-sm:top-0 max-sm:left-10 w-full h-full text-white flex flex-row font-bold items-end max-sm:max-h-64">
+            <div className="absolute left-28 bottom-16 max-sm:top-0 max-sm:left-10 w-full h-full text-white flex flex-row font-bold items-end max-sm:max-h-64 pb-5">
                 <div className="relative flex flex-col">
                     <div className="text-6xl max-sm:text-2xl font-normal inline-flex items-center gap-x-10">
                         Projects <div className="w-[170px] max-sm:w-16 max-sm:-translate-x-8 h-1 max-sm:h-1 bg-white"/>

@@ -183,12 +183,11 @@ const gallery2 = [
 
 const Photos = ({src, title})=>{
     return(
-        <div className='aspect-square w-96 flex flex-col items-center text-base text-center text-secondary bg-white border-4 border-secondary shadow-lg gap-4 justify-center py-4'>
-            <div className='w-11/12 overflow-hidden'>
+        <div className='aspect-square w-[50vw] max-sm:w-[80vw] flex flex-col items-center text-base text-center text-secondary bg-white border-4 border-secondary shadow-lg gap-4 justify-center py-4'>
+            <div className='w-11/12 h-auto aspect-square overflow-hidden relative'>
                 <TSImg
                     src={src}
-                    width={500}
-                    height={500}
+                    fill={true}
                     alt={title}
                     className='transition-all object-cover aspect-square object-center hover:scale-110'
                 />
@@ -226,13 +225,12 @@ const ImgGallery = ({gallery}) => {
             <Slider {...settings}>
                 {gallery.map((e, i)=>{
                     return(
-                        <div className='w-full'>
+                        <div className='w-fit h-[75vh] relative'>
                             <TSImg
                                 src={e.src}
-                                width={600}
-                                height={600}
+                                fill={true}
                                 alt={e.title}
-                                className={`mx-auto object-cover object-center h-fit w-fit`}
+                                className={`mx-auto object-contain object-center h-auto w-fit`}
                             />
                         </div>
                     )
@@ -266,22 +264,22 @@ export default function Gallery(){
                     )
                 })}
                 </div> */}
-                <div className='aspect-video w-3/5 mx-auto bg-primary overflow-hidden rounded-2xl relative group' onClick={handleClick}>
+                <div className='aspect-video w-[75vw] mx-auto bg-primary overflow-hidden rounded-2xl relative group' onClick={handleClick}>
                     <TSImg
                         {...gallery[0]}
                         fill={true}
                         className='group-hover:scale-110 w-full aspect-video transition-all ease-in object-cover object-center group-hover:brightness-50 group-hover:blur-sm'
                     />
-                    <div className='absolute w-2/3 h-fit top-1/2 -translate-y-[50%] left-1/2 -translate-x-[50%] group-hover:text-white group-hover:block hidden transition-all leading-relaxed cursor-pointer text-xl'>
+                    <div className='absolute w-2/3 h-fit top-1/2 -translate-y-[50%] left-1/2 -translate-x-[50%] group-hover:text-white group-hover:block hidden transition-all leading-relaxed cursor-pointer text-xl max-sm:text-base'>
                         <b>{title}</b>
                     </div>
                 </div>
                 {/* <div className='w-2/3 text-center text-white -translate-y-14 text-base last:text-secondary'>
                     {title}
                 </div> */}
-                <div id='modal' className={`transition-all fixed left-0 top-0 w-full h-full bg-[#000000] bg-opacity-90 z-50 overflow-hidden ${open ? 'block' : 'hidden'}`}>
-                    <div id='modalContent' className='relative h-4/5 w-2/3 mx-auto bottom-0 pt-20 pb-5'>
-                        <div onClick={handleClick} className='absolute right-0 top-3 w-fit h-fit aspect-square  z-20 hover:scale-110 hover:outline-4'>
+                <div id='modal' className={`transition-all fixed left-0 top-0 w-full h-screen bg-[#000000] bg-opacity-90 z-50 overflow-hidden ${open ? 'block' : 'hidden'}`}>
+                    <div id='modalContent' className='relative h-[80vh] w-2/3 mx-auto bottom-0 pt-20 pb-5'>
+                        <div onClick={handleClick} className='absolute right-0 top-3 w-fit h-fit aspect-square z-20 hover:scale-110 hover:outline-4'>
                             <IoMdClose className='text-white text-3xl'/>
                         </div>
                         <ImgGallery gallery={gallery}/>
@@ -294,7 +292,7 @@ export default function Gallery(){
 
     return(
         <>
-            <div className="w-screen h-screen max-sm:max-h-64 flex justify-between px-20 max-sm:px-4 pt-32 pb-24 items-center bg-secondary relative">
+            <div className="w-screen h-screen max-sm:max-h-64 flex justify-between px-20 max-sm:px-6 pt-32 pb-24 items-center bg-secondary relative">
                 <div className="text-white -bottom-0 relative w-[45%]">
                     <h1 className="leading-[0.8] text-8xl max-sm:text-4xl">Seas of<br/><b>Impact.</b></h1>
                 </div>

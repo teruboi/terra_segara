@@ -46,17 +46,18 @@ export default function AboutUs() {
             height={200}
             className="absolute right-0 top-full z-10 -translate-y-8 hidden"
         />
-        <div className="w-screen h-screen max-sm:max-h-64">
+        <div className="w-screen h-[30vh] aspect-video">
             <TSImg
                 src={'about-us-hero.png'}
                 alt="About us hero image"
                 fill={true}
-                className={'object-cover object-center'}
+                className={'object-cover object-center w-full h-full'}
             />
-        </div>
-        <div className="absolute w-full h-screen max-sm:max-h-64 bg-gradient-to-t from-white from-20% to-80% text-center text-secondary text-8xl max-sm:text-4xl font-bold grid content-end top-24 max-sm:top-8">
+            <div className="absolute w-full h-full max-sm:max-h-64 bg-gradient-to-t from-white from-20% to-80% text-center text-secondary text-8xl max-sm:text-4xl font-bold grid content-end top-24 max-sm:top-8">
                 About Us
         </div>
+        </div>
+        
         <div className="mt-24 max-sm:mt-0 max-w-full h-fit py-12 max-sm:py-8 mx-auto w-2/3 max-sm:text-xs max-sm:w-4/5 text-justify text-secondary text-xl max-sm:leading-snug">
             <h1 className="text-4xl max-sm:text-lg font-bold text-center">Who Are We?</h1>
             <br className="max-sm:invisible"/>
