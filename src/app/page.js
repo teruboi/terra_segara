@@ -82,7 +82,7 @@ export default function LandingPage() {
           </div>
         </div>  
       </div>
-      <div className="w-screen h-[80vh] max-sm:h-[40vh] py-10 -translate-y-10 max-sm:py-0 max-sm:-translate-y-20 bg-gradient-to-b from-white via-secondary to-white grid grid-flow-col gap-5 max-sm:gap-2 justify-center items-center relative">
+      {/* <div className="w-screen h-[80vh] max-sm:h-[40vh] py-10 -translate-y-10 max-sm:py-0 max-sm:-translate-y-20 bg-gradient-to-b from-white via-secondary to-white grid grid-flow-col gap-5 max-sm:gap-2 justify-center items-center relative">
         <Image
           src={'/Object-graphic5 1.png'}
           width={250}
@@ -125,7 +125,7 @@ export default function LandingPage() {
             <p className="text-sm max-sm:text-[8px] px-6 max-sm:px-3 max-sm:leading-tight transition-all group-hover:text-secondary text-center">Our core values encompass continuous learning and adaptation, proactive action coupled with reflection, collaborative knowledge-building, and adept facilitation of transformative change.</p>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="w-full h-fit bg-white mt-52 pb-16 max-sm:py-0 max-sm:-my-10">
         <h1 className="text-secondary text-5xl max-sm:text-xl font-bold text-center">Our Work</h1>
         <SliderHome content={ourWorks} />

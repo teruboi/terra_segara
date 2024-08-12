@@ -47,7 +47,7 @@ export default function Navbar() {
               className={`w-28 translate-x-5 max-sm:w-12 transition-all ${(pathname === '/project') && scrollY <= 0 ? '-translate-y-1' : ''}`}
             />
           </Link>
-          <div className={`gap-5 max-sm:gap-2 flex max-sm:text-[10px] text-2xl`}>
+          <div className={`gap-5 max-sm:gap-1 flex max-sm:text-[10px] text-2xl`}>
             <Link href={'about-us'} className={`px-2 transition-all ${pathname === '/about-us' ? 'text-primary max-sm:underline font-bold sm:border-b-4 sm:border-primary brightness-125' : ''}`}>About Us</Link>
             <Link href={'project'} className={`px-2 transition-all ${pathname === '/project' ? 'text-primary max-sm:underline font-bold sm:border-b-4 sm:border-primary brightness-125' : ''}`}>Project</Link>
             <Link href={'join-us'} className={`px-2 transition-all ${pathname === '/join-us' ? 'text-primary max-sm:underline font-bold sm:border-b-4 sm:border-primary brightness-125' : ''}`}>Join Us</Link>
