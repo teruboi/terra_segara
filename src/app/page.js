@@ -82,50 +82,7 @@ export default function LandingPage() {
           </div>
         </div>  
       </div>
-      {/* <div className="w-screen h-[80vh] max-sm:h-[40vh] py-10 -translate-y-10 max-sm:py-0 max-sm:-translate-y-20 bg-gradient-to-b from-white via-secondary to-white grid grid-flow-col gap-5 max-sm:gap-2 justify-center items-center relative">
-        <Image
-          src={'/Object-graphic5 1.png'}
-          width={250}
-          height={500}
-          className="absolute left-0 -bottom-24 hidden"
-        />
-        <div className="group w-80 max-sm:w-28 max-h-[43rem] h-[100vh] max-sm:h-[30vh] rounded-[2.5rem] max-sm:rounded-xl drop-shadow-md hover:drop-shadow-2xl hover:scale-110 transition-all -z-0 mx-1">
-          <TSImg
-            src={'Vision.png'}
-            fill
-            className="h-full w-full object-cover object-center rounded-[40px] max-sm:rounded-xl"
-          />
-          <div className="w-full h-full -z-0 absolute rounded-[40px] max-sm:rounded-xl group-hover:bg-gradient-to-b from-secondary/70 to-50% transition-all"/>
-          <div className="text-center text-7xl max-sm:text-xl font-bold relative top-5 max-sm:top-3">Vision</div>
-          <div className="transition-all rounded-[2.5rem] max-sm:rounded-xl text-center relative top-[26rem] w-full h-full max-sm:top-32">
-            <p className="text-sm max-sm:text-[8px] px-6 max-sm:px-3 max-sm:leading-tight transition-all group-hover:text-secondary text-center">We envision a future where younger generations have abundant opportunities for improved livelihoods and a profound connection with nature.</p>
-          </div>
-        </div>
-        <div className="group w-80 max-sm:w-28 max-h-[43rem] h-[100vh] max-sm:h-[30vh] rounded-[40px] max-sm:rounded-xl drop-shadow-md hover:drop-shadow-2xl hover:scale-110 transition-all -z-0 mx-1">
-          <TSImg
-            src={'Mission.png'}
-            fill
-            className="h-full w-full object-cover object-center rounded-[40px] max-sm:rounded-xl"
-          />
-          <div className="w-full h-full -z-0 absolute rounded-[40px] max-sm:rounded-xl group-hover:bg-gradient-to-b from-secondary/70 to-50% transition-all"/>
-          <div className="text-center text-7xl max-sm:text-xl font-bold relative top-5 max-sm:top-3">Mission</div>
-          <div className="transition-all rounded-[2.5rem] max-sm:rounded-xl text-center relative top-[26rem] w-full h-full max-sm:top-32">
-            <p className="text-sm max-sm:text-[8px] px-6 max-sm:px-3 max-sm:leading-tight transition-all group-hover:text-secondary text-center">Our mission is to empower and guide the younger generation to become proactive participants in addressing climate change by fostering a deeper connection with nature.</p>
-          </div>
-        </div>
-        <div className="group w-80 max-sm:w-28 max-h-[43rem] h-[100vh] max-sm:h-[30vh] rounded-[40px] max-sm:rounded-xl drop-shadow-md hover:drop-shadow-2xl hover:scale-110 transition-all -z-0 mx-1">
-          <TSImg
-            src={'Value.png'}
-            fill
-            className="h-full w-full object-cover object-center rounded-[40px] max-sm:rounded-xl"
-          />
-          <div className="w-full h-full -z-0 absolute rounded-[40px] max-sm:rounded-xl group-hover:bg-gradient-to-b from-secondary/70 to-50% transition-all"/>
-          <div className="text-center text-7xl max-sm:text-xl font-bold relative top-5 max-sm:top-3">Value</div>
-          <div className="transition-all rounded-[2.5rem] max-sm:rounded-xl text-center relative top-[26rem] w-full h-full max-sm:top-32">
-            <p className="text-sm max-sm:text-[8px] px-6 max-sm:px-3 max-sm:leading-tight transition-all group-hover:text-secondary text-center">Our core values encompass continuous learning and adaptation, proactive action coupled with reflection, collaborative knowledge-building, and adept facilitation of transformative change.</p>
-          </div>
-        </div>
-      </div> */}
+      
       <div className="w-full h-fit bg-white mt-52 pb-16 max-sm:py-0 max-sm:-my-10">
         <h1 className="text-secondary text-5xl max-sm:text-xl font-bold text-center">Our Work</h1>
         <SliderHome content={ourWorks} />
