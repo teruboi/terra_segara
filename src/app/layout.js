@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/Logo Initial (two tone).ico" sizes="any" />
       </head>
-      <body className={`${signika.className} max-w-full w-full flex flex-col items-center sm:mx-auto bg-gradient-to-b from-white to-white scroll-smooth`}>
+      <body className={`${signika.className} max-w-full w-full flex flex-col items-center sm:mx-auto bg-gradient-to-b from-white to-white`}>
           <Navbar />
           {children}
           <ScrollToTop />

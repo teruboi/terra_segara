@@ -89,7 +89,7 @@ export default function LandingPage() {
           height={500}
           className="absolute left-0 -bottom-24 hidden"
         />
-        <div className="group w-80 max-sm:w-28 h-[100vh] max-sm:h-[30vh] rounded-[2.5rem] max-sm:rounded-xl drop-shadow-md hover:drop-shadow-2xl hover:scale-110 transition-all -z-0 mx-1">
+        <div className="group w-80 max-sm:w-28 max-h-[43rem] h-[100vh] max-sm:h-[30vh] rounded-[2.5rem] max-sm:rounded-xl drop-shadow-md hover:drop-shadow-2xl hover:scale-110 transition-all -z-0 mx-1">
           <TSImg
             src={'Vision.png'}
             fill
@@ -101,7 +101,7 @@ export default function LandingPage() {
             <p className="text-sm max-sm:text-[8px] px-6 max-sm:px-3 max-sm:leading-tight transition-all group-hover:text-secondary text-center">We envision a future where younger generations have abundant opportunities for improved livelihoods and a profound connection with nature.</p>
           </div>
         </div>
-        <div className="group w-80 max-sm:w-28 h-full max-sm:h-[30vh] rounded-[40px] max-sm:rounded-xl drop-shadow-md hover:drop-shadow-2xl hover:scale-110 transition-all -z-0 mx-1">
+        <div className="group w-80 max-sm:w-28 max-h-[43rem] h-[100vh] max-sm:h-[30vh] rounded-[40px] max-sm:rounded-xl drop-shadow-md hover:drop-shadow-2xl hover:scale-110 transition-all -z-0 mx-1">
           <TSImg
             src={'Mission.png'}
             fill
@@ -113,7 +113,7 @@ export default function LandingPage() {
             <p className="text-sm max-sm:text-[8px] px-6 max-sm:px-3 max-sm:leading-tight transition-all group-hover:text-secondary text-center">Our mission is to empower and guide the younger generation to become proactive participants in addressing climate change by fostering a deeper connection with nature.</p>
           </div>
         </div>
-        <div className="group w-80 max-sm:w-28 h-full max-sm:h-[30vh] rounded-[40px] max-sm:rounded-xl drop-shadow-md hover:drop-shadow-2xl hover:scale-110 transition-all -z-0 mx-1">
+        <div className="group w-80 max-sm:w-28 max-h-[43rem] h-[100vh] max-sm:h-[30vh] rounded-[40px] max-sm:rounded-xl drop-shadow-md hover:drop-shadow-2xl hover:scale-110 transition-all -z-0 mx-1">
           <TSImg
             src={'Value.png'}
             fill
