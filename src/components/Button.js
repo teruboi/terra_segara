@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function ButtonDefault({ text, url, variant }) {
+export default function ButtonDefault({ text, url, variant, target }) {
     let button = 'min-w-[25vw] min-h-[5vh] max-sm:min-h-fit h-fit w-fit px-10 max-sm:px-3 max-sm:py-1 max-sm:text-xs text-xl text-white text-center rounded-[2rem] transition-all mx-auto hover:scale-[90%] max-sm:hover:scale=[105%] focus:outline-0 flex justify-center'
     if (variant !== null){
         switch (variant) {
@@ -17,8 +17,12 @@ export default function ButtonDefault({ text, url, variant }) {
                 break;
         }
     }
+
+    if (target == null){
+        target = "_self"
+    }
     return(
-        <Link href={`${url}`} className="mx-auto">
+        <Link href={`${url}`} className="mx-auto" target={target}>
             <div className={button}>
                 <p className="my-auto">{text !== null ? text : 'Button'}</p>
             </div>

@@ -16,7 +16,7 @@ export default function Footer() {
               <div className="w-1 h-full max-sm:h-36 bg-white col-span-1 sm:-translate-x-10 translate-x-5"/>
               <div className="w-fit h-fit grid-flow-row grid gap-0 col-span-5 text-xl max-sm:text-xs text-center">
                 <div className="flex justify-center gap-3 max-sm:scale-50">
-                  <Link href={'https://www.instagram.com/terrasegaraindonesia'} target="__blank" className="hover:scale-90 transition-all"> 
+                  <Link href={'https://www.instagram.com/terrasegaraindonesia'} target="_blank" className="hover:scale-90 transition-all"> 
                     <Image
                       src="/Instagram.png"
                       width={60}
@@ -24,7 +24,7 @@ export default function Footer() {
                       alt="@terra_segara"
                     />
                   </Link>
-                  <Link href={'/'} className="hover:scale-90 transition-all"> 
+                  <Link href={'https://wa.me/6281218187421'} className="hover:scale-90 transition-all" target="_blank"> 
                     <Image
                       src="/WhatsApp.png"
                       width={60}
@@ -32,7 +32,7 @@ export default function Footer() {
                       alt="Terra Segara"
                     />
                   </Link>
-                  <Link href={'/'} className="hover:scale-90 transition-all"> 
+                  <Link href={'/'} className="hover:scale-90 transition-all" target="_blank"> 
                     <Image
                       src="/Facebook.png"
                       width={60}
@@ -40,7 +40,7 @@ export default function Footer() {
                       alt="@terra_segara"
                     />
                   </Link>
-                  <Link href={'/'} className="hover:scale-90 transition-all"> 
+                  <Link href={'/'} className="hover:scale-90 transition-all" target="_blank"> 
                     <Image
                       src="/Linkedin 1.png"
                       width={60}

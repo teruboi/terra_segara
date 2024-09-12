@@ -1,5 +1,7 @@
+import ButtonDefault from "@/components/Button";
 import TSImg from "@/components/TSImg";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Donate(){
     return(
@@ -29,28 +31,10 @@ export default function Donate(){
             <div className="max-w-screen w-screen h-fit py-12 max-sm:inline flex gap-1 justify-evenly text-secondary bg-gradient-to-b items-center from-white via-secondary via-50% to-100% px-32 max-sm:px-10">
                 <div className="text-2xl max-sm:text-lg w-1/2 max-sm:w-full">
                     If you want to support us you can also donate through our coral adoption or scholarship scheme
-                    <div className="w-fit h-fit bg-white mt-9 rounded-3xl shadow-xl px-12 py-16 max-sm:px-4 max-sm:py-6">
-                        <form className="flex flex-col gap-2">
-                            <label className="text-xl">Make a Donation</label>
-                            <div className="grid grid-cols-2 gap-2 max-sm:grid-flow-cols max-sm:grid-cols-1">
-                                <input type="text" name="name" className="border-[3px] border-secondary shadow-md rounded-2xl max-sm:rounded-lg h-fit w-50 py-2 px-5 max-sm:px-3 placeholder:text-secondary text-secondary text-base max-sm:text-xs" placeholder="Your Name"/> 
-                                <input type="email" name="email" className="border-[3px] border-secondary shadow-md rounded-2xl max-sm:rounded-lg h-fit w-50 py-2 px-5 max-sm:px-3 placeholder:text-secondary text-secondary text-base max-sm:text-xs" placeholder="Your Email"/> 
-                            </div>
-                            <label className="text-xl">Donation Amount</label>
-                            <select name="amount" defaultValue={""} className="border-[3px] border-secondary shadow-md rounded-2xl max-sm:rounded-lg h-fit w-36 py-2 px-5 max-sm:px-2 placeholder:text-secondary text-secondary text-base max-sm:text-xs">
-                                <option value="" disabled>Click here</option>
-                                <option value={5}>5$</option>
-                                <option value={10}>10$</option>
-                                <option value={15}>15$</option>
-                                <option value={20}>20$</option>
-                            </select>
-                            <div className="flex items-center gap-3 max-sm:gap-2 my-5">
-                                <input type="radio" id="check" name="emailUpdate" className="w-5 h-5 max-sm:size-3 accent-secondary" />
-                                <label className="text-secondary text-xl max-sm:text-sm">I would like to receive updates via email</label>
-                            </div>
-                            <button type="submit" className="bg-secondary min-w-[220px] max-h-[60px] h-fit w-fit px-10 py-1 text-lg text-white text-center rounded-[32px] transition-all mt-2 shadow-md max-sm:mx-auto">Submit Donation</button>
-                            <p className="text-xs pt-3 font-thin">*If you have trouble with donation kindly contact us by Whatsapp or email</p>
-                        </form>
+                    <div className="w-fit h-fit bg-white mt-9 rounded-3xl shadow-xl px-12 py-16 max-sm:px-4 max-sm:py-6 flex-row">
+                        <ButtonDefault url={'https://app.midtrans.com/payment-links/1722997680304'} text={'Transfer'} variant={2} target={'_blank'}/>
+                        <div className="h-5"></div>
+                        <ButtonDefault url={'https://app.midtrans.com/payment-links/1722998300661'} text={'QRIS'} variant={2} target={'_blank'}/>
                     </div>
                 </div>
                 <TSImg

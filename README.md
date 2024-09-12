@@ -20,6 +20,22 @@ You can start editing the page by modifying `app/page.js`. The page auto-updates
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+## Prod Deployment
+
+To deploy, we use Amplify for hosting the github repositories, so to do that is as simple as merge and push the branch to github
+
+dev:
+- git checkout dev
+- (edit stuff here)
+- git add .
+- git commit -m "message"
+- git push -u origin dev
+
+main/prod:
+- git checkout main
+- git merge dev
+- git push -u origin main
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
