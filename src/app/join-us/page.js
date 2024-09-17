@@ -48,15 +48,23 @@ export default function JoinUs() {
                 @terrasegaraindonesia
             </div>
         </div>
-        <div className="max-w-full w-full h-fit max-sm:px-8 px-20 flex flex-col gap-2">
+        <div className="max-w-full w-full h-fit max-sm:px-8 px-20 flex flex-col gap-2 mb-8">
             <h1 className="text-secondary text-6xl max-sm:text-3xl font-bold">Let's Get in Touch!</h1>
             <p className="text-xl max-sm:text-sm text-secondary leading-tight">We are dedicated to engaging a wide array of stakeholders, including institutions, organizations, and individuals who share our vision and ethos. We welcome any insights, opportunities, or recommendations you may have to offer. Kindly share your name, email address, and any valuable messages you wish to convey in the space provided below.</p>
-            <form className="text-lg max-sm:text-xs flex flex-col gap-y-2 my-4 justify-start">
-                <input type="text" name="name" placeholder="Your Name" className="placeholder:text-secondary border-[3px] text-secondary border-secondary rounded-2xl max-sm:rounded-lg px-5 max-sm:px-3 py-2.5 max-sm:py-2 max-h-[60px] h-fit w-[346px] max-sm:w-[180px] focus:placeholder:text-opacity-50 transition-colors shadow-md"/>
-                <input type="email" name="email" placeholder="Your Email" className="placeholder:text-secondary border-[3px] text-secondary border-secondary rounded-2xl max-sm:rounded-lg px-5 max-sm:px-3 py-2.5 max-sm:py-2 max-h-[60px] h-fit w-[346px] max-sm:w-[180px] focus:placeholder:text-opacity-50 transition-colors shadow-md"/>
-                <textarea name="message" cols={7} placeholder="Your Message" className="placeholder:text-secondary border-[3px] text-secondary border-secondary rounded-2xl max-sm:rounded-lg px-5 max-sm:px-3 py-2.5 max-sm:py-2 h-[340px] max-sm:h-60 focus:placeholder:text-opacity-50 transition-colors shadow-md"/>
-                <button type="submit" className="bg-secondary min-w-[220px] max-h-[60px] h-fit w-fit px-10 py-1 text-base text-white text-center rounded-[32px] transition-all mt-2 max-sm:mx-auto">Send</button>
-            </form>
+            <div className="flex flex-col gap-4">
+            <a 
+            href="https://wa.me/6281218187421" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            >
+            <button 
+                type="button" 
+                className="bg-secondary min-w-[220px] max-h-[60px] h-fit w-fit px-10 py-1 text-lg text-white text-center rounded-[32px] transition-all mt-2 shadow-md max-sm:mx-auto"
+            >
+                Chat Now!
+            </button>
+            </a>
+        </div>
         </div>
         </>
     )

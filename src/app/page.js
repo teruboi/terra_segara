@@ -89,7 +89,36 @@ export default function LandingPage() {
           height={500}
           className="absolute left-0 -bottom-24 hidden"
         />
-        <div className="group w-80 max-sm:w-28 max-h-[43rem] h-[100vh] max-sm:h-[30vh] rounded-[2.5rem] max-sm:rounded-xl drop-shadow-md hover:drop-shadow-2xl hover:scale-110 transition-all -z-0 mx-1">
+        <div className="md:w-[1024px] md:h-[80vh] h-[200px] flex flex-row justify-between">
+            <div className="w-[30%] h-full  rounded-3xl group flex flex-col justify-between relative hover:scale-105 transition-all"
+            style={{
+              backgroundImage: `url("https://terra-segara-asset.s3.ap-southeast-2.amazonaws.com/images/Vision.png")`,
+              backgroundSize:'cover'
+            }}
+            >
+              <div class="text-center text-7xl max-sm:text-xl font-bold relative top-5 max-sm:top-3 z-10">Vision</div>
+              <p class="text-sm max-sm:text-[8px] px-6 max-sm:px-3 max-sm:leading-tight transition-all group-hover:text-secondary text-center mb-4 md:h-[150px] z-10">We envision a future where younger generations have abundant opportunities for improved livelihoods and a profound connection with nature.</p>
+            </div>
+            <div className="w-[30%] h-full rounded-3xl group flex flex-col justify-between relative hover:scale-105 transition-all"
+            style={{
+              backgroundImage: `url("https://terra-segara-asset.s3.ap-southeast-2.amazonaws.com/images/Mission.png")`,
+              backgroundSize:'cover'
+            }}
+            >
+              <div class="text-center text-7xl max-sm:text-xl font-bold relative top-5 max-sm:top-3 z-10">Mission</div>
+              <p class="text-sm max-sm:text-[8px] px-6 max-sm:px-3 max-sm:leading-tight transition-all group-hover:text-secondary text-center mb-4 md:h-[150px] z-10">Our mission is to empower and guide the younger generation to become proactive participants in addressing climate change by fostering a deeper connection with nature.</p>
+            </div>
+            <div className="w-[30%] h-full rounded-3xl group flex flex-col justify-between relative hover:scale-105 transition-all"
+              style={{
+              backgroundImage: `url("https://terra-segara-asset.s3.ap-southeast-2.amazonaws.com/images/Value.png")`,
+              backgroundSize:'cover'
+            }}
+            >
+              <div class="text-center text-7xl max-sm:text-xl font-bold relative top-5 max-sm:top-3 z-10">Value</div>
+              <p class="text-sm max-sm:text-[8px] px-6 max-sm:px-3 max-sm:leading-tight transition-all group-hover:text-secondary text-center mb-4 md:h-[150px] z-10">Our core values encompass continuous learning and adaptation, proactive action coupled with reflection, collaborative knowledge-building, and adept facilitation of transformative change.</p>
+            </div>
+        </div>
+        {/* <div className="group w-80 max-sm:w-28 h-[100vh] max-sm:h-[30vh] rounded-[2.5rem] max-sm:rounded-xl drop-shadow-md hover:drop-shadow-2xl hover:scale-110 transition-all -z-0 mx-1">
           <TSImg
             src={'Vision.png'}
             fill
@@ -101,7 +130,7 @@ export default function LandingPage() {
             <p className="text-sm max-sm:text-[8px] px-6 max-sm:px-3 max-sm:leading-tight transition-all group-hover:text-secondary text-center">We envision a future where younger generations have abundant opportunities for improved livelihoods and a profound connection with nature.</p>
           </div>
         </div>
-        <div className="group w-80 max-sm:w-28 max-h-[43rem] h-[100vh] max-sm:h-[30vh] rounded-[40px] max-sm:rounded-xl drop-shadow-md hover:drop-shadow-2xl hover:scale-110 transition-all -z-0 mx-1">
+        <div className="group w-80 max-sm:w-28 h-full max-sm:h-[30vh] rounded-[40px] max-sm:rounded-xl drop-shadow-md hover:drop-shadow-2xl hover:scale-110 transition-all -z-0 mx-1">
           <TSImg
             src={'Mission.png'}
             fill
@@ -113,7 +142,7 @@ export default function LandingPage() {
             <p className="text-sm max-sm:text-[8px] px-6 max-sm:px-3 max-sm:leading-tight transition-all group-hover:text-secondary text-center">Our mission is to empower and guide the younger generation to become proactive participants in addressing climate change by fostering a deeper connection with nature.</p>
           </div>
         </div>
-        <div className="group w-80 max-sm:w-28 max-h-[43rem] h-[100vh] max-sm:h-[30vh] rounded-[40px] max-sm:rounded-xl drop-shadow-md hover:drop-shadow-2xl hover:scale-110 transition-all -z-0 mx-1">
+        <div className="group w-80 max-sm:w-28 h-full max-sm:h-[30vh] rounded-[40px] max-sm:rounded-xl drop-shadow-md hover:drop-shadow-2xl hover:scale-110 transition-all -z-0 mx-1">
           <TSImg
             src={'Value.png'}
             fill
@@ -124,7 +153,7 @@ export default function LandingPage() {
           <div className="transition-all rounded-[2.5rem] max-sm:rounded-xl text-center relative top-[26rem] w-full h-full max-sm:top-32">
             <p className="text-sm max-sm:text-[8px] px-6 max-sm:px-3 max-sm:leading-tight transition-all group-hover:text-secondary text-center">Our core values encompass continuous learning and adaptation, proactive action coupled with reflection, collaborative knowledge-building, and adept facilitation of transformative change.</p>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="w-full h-fit bg-white mt-52 pb-16 max-sm:py-0 max-sm:-my-10">
         <h1 className="text-secondary text-5xl max-sm:text-xl font-bold text-center">Our Work</h1>
