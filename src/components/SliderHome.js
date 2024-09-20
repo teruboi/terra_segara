@@ -57,8 +57,8 @@ function SliderHome({ content }) {
                         className="object-cover object-bottom h-full mx-auto -z-10 max-sm:rounded-xl"
                     />
                     <div className="absolute bottom-0 pb-5 max-sm:pb-2 w-full bg-gradient-to-t from-secondary -z-10 rounded-b-xl">
-                        <h1 className="text-3xl max-sm:text-xl font-bold">{e.title}</h1>
-                        <h3 className="text-xl max-sm:text-xs">{e.date}</h3>
+                        <h1 className="text-3xl text-white max-sm:text-xl font-bold">{e.title}</h1>
+                        <h3 className="text-xl text-white max-sm:text-xs">{e.date}</h3>
                     </div>
                 </div>
             )
