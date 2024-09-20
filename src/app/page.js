@@ -45,8 +45,8 @@ export default function LandingPage() {
           className="absolute right-0 sm:top-2/3 sm:translate-y-10 top-1/3 translate-y-5 transition-all z-20 max-sm:scale-50 max-sm:translate-x-11 hidden"
         />
           <div className="absolute top-0 w-full h-full bg-gradient-to-t from-white to-40% flex flex-col justify-center max-sm:px-10 px-20 z-10 gap-20"> 
-            <p className="text-8xl max-sm:text-2xl font-normal">Be Part Of</p>
-            <p className="text-8xl max-sm:text-2xl font-bold -mt-24 max-sm:translate-y-1">A Change.</p>
+            <p className="text-8xl max-sm:text-2xl font-normal text-white">Be Part Of</p>
+            <p className="text-8xl max-sm:text-2xl font-bold -mt-24 max-sm:translate-y-1 text-white">A Change.</p>
           </div>
       </div>
         
@@ -97,7 +97,7 @@ export default function LandingPage() {
             }}
             >
               <div class="text-center text-7xl max-sm:text-xl font-bold relative top-5 max-sm:top-3 z-10">Vision</div>
-              <p class="text-sm max-sm:text-[8px] px-6 max-sm:px-3 max-sm:leading-tight transition-all group-hover:text-secondary text-center mb-4 md:h-[150px] z-10">We envision a future where younger generations have abundant opportunities for improved livelihoods and a profound connection with nature.</p>
+              <p class="text-sm max-sm:text-[8px] px-6 max-sm:px-3 max-sm:leading-tight transition-all text-white group-hover:text-secondary text-center mb-4 md:h-[150px] z-10">We envision a future where younger generations have abundant opportunities for improved livelihoods and a profound connection with nature.</p>
             </div>
             <div className="w-[30%] h-full rounded-3xl group flex flex-col justify-between relative hover:scale-105 transition-all"
             style={{
@@ -106,7 +106,7 @@ export default function LandingPage() {
             }}
             >
               <div class="text-center text-7xl max-sm:text-xl font-bold relative top-5 max-sm:top-3 z-10">Mission</div>
-              <p class="text-sm max-sm:text-[8px] px-6 max-sm:px-3 max-sm:leading-tight transition-all group-hover:text-secondary text-center mb-4 md:h-[150px] z-10">Our mission is to empower and guide the younger generation to become proactive participants in addressing climate change by fostering a deeper connection with nature.</p>
+              <p class="text-sm max-sm:text-[8px] px-6 max-sm:px-3 max-sm:leading-tight transition-all text-white group-hover:text-secondary text-center mb-4 md:h-[150px] z-10">Our mission is to empower and guide the younger generation to become proactive participants in addressing climate change by fostering a deeper connection with nature.</p>
             </div>
             <div className="w-[30%] h-full rounded-3xl group flex flex-col justify-between relative hover:scale-105 transition-all"
               style={{
@@ -115,7 +115,7 @@ export default function LandingPage() {
             }}
             >
               <div class="text-center text-7xl max-sm:text-xl font-bold relative top-5 max-sm:top-3 z-10">Value</div>
-              <p class="text-sm max-sm:text-[8px] px-6 max-sm:px-3 max-sm:leading-tight transition-all group-hover:text-secondary text-center mb-4 md:h-[150px] z-10">Our core values encompass continuous learning and adaptation, proactive action coupled with reflection, collaborative knowledge-building, and adept facilitation of transformative change.</p>
+              <p class="text-sm max-sm:text-[8px] px-6 max-sm:px-3 max-sm:leading-tight transition-all text-white group-hover:text-secondary text-center mb-4 md:h-[150px] z-10">Our core values encompass continuous learning and adaptation, proactive action coupled with reflection, collaborative knowledge-building, and adept facilitation of transformative change.</p>
             </div>
         </div>
         {/* <div className="group w-80 max-sm:w-28 h-[100vh] max-sm:h-[30vh] rounded-[2.5rem] max-sm:rounded-xl drop-shadow-md hover:drop-shadow-2xl hover:scale-110 transition-all -z-0 mx-1">
