@@ -41,7 +41,7 @@ export default function JoinUs() {
             </div>
             <div className="leading-tight my-3 max-sm:my-1">
                 <p className="font-bold">WhatsApp</p>
-                +62 111 2222 333
+                +62 812 1818 7421
             </div>
             <div className="leading-tight my-3 max-sm:my-1">
                 <p className="font-bold">Instagram</p>

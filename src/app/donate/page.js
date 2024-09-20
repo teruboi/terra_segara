@@ -26,8 +26,8 @@ export default function Donate(){
                 Thank you for joining us in our journey to make a difference! Your generosity today is a beacon of hope for a brighter tomorrow.
                 </p>
             </div>
-            <div className="max-w-screen w-screen h-fit py-12 max-sm:inline flex gap-1 justify-evenly text-secondary items-center  px-32 max-sm:px-10">
-                <div className="text-2xl max-sm:text-lg w-1/2 max-sm:w-full">
+            <div className="max-w-screen w-screen h-fit py-12 max-sm:inline flex max-lg:flex-col gap-1 justify-evenly text-secondary items-center  px-32 max-sm:px-10">
+                <div className="text-2xl max-sm:text-lg w-1/2 max-sm:w-full max-m:w-full max-lg:w-full mb-4">
                     If you want to support us you can also donate through our coral adoption or scholarship scheme
                     {/* <div className="w-fit h-fit bg-white mt-9 rounded-3xl shadow-xl px-12 py-16 max-sm:px-4 max-sm:py-6">
                         <form className="flex flex-col gap-2">
@@ -52,11 +52,11 @@ export default function Donate(){
                             <p className="text-xs pt-3 font-thin">*If you have trouble with donation kindly contact us by Whatsapp or email</p>
                         </form>
                     </div> */}
-                    <div className="w-fit h-fit bg-white mt-9 rounded-3xl shadow-xl px-12 py-16 max-sm:px-4 max-sm:py-6">
-                        <div className="flex flex-row mb-4">
-                            <label className="text-xl">Donate Now!</label>
+                    <div className="w-full h-fit bg-white mt-9 rounded-3xl shadow-xl px-12 py-16 max-sm:px-4 max-sm:py-6">
+                        <div className="flex flex-row justify-center mb-4">
+                            <text className="text-xl">Donate Now!</text>
                         </div>
-                        <div className="flex flex-row gap-4 max-sm:flex-col">
+                        <div className="flex flex-row gap-4 flex-col">
                             {/* Midtrans Gateway */}
                             <a 
                                 href="https://app.midtrans.com/payment-links/1722997680304" 
@@ -65,7 +65,7 @@ export default function Donate(){
                             >
                                 <button 
                                 type="button" 
-                                className="bg-secondary min-w-[220px] max-h-[60px] h-fit w-fit px-10 py-1 text-lg text-white text-center rounded-[32px] transition-all mt-2 shadow-md max-sm:mx-auto"
+                                className="bg-secondary w-full h-fit px-10 py-1 text-lg text-white text-center rounded-[32px] transition-all mt-2 shadow-md max-sm:mx-auto"
                                 >
                                 Donation
                                 </button>
@@ -78,7 +78,7 @@ export default function Donate(){
                             >
                                 <button 
                                 type="button" 
-                                className="bg-secondary min-w-[220px] max-h-[60px] h-fit w-fit px-10 py-1 text-lg text-white text-center rounded-[32px] transition-all mt-2 shadow-md max-sm:mx-auto"
+                                className="bg-secondary w-full h-fit px-10 py-1 text-lg text-white text-center rounded-[32px] transition-all mt-2 shadow-md max-sm:mx-auto"
                                 >
                                 Donation By QRIS
                                 </button>
@@ -90,7 +90,7 @@ export default function Donate(){
                     src={'11.png'}
                     width={450}
                     height={450}
-                    className="rounded-[45px] mx-auto translate-x-6 max-sm:hidden object-cover"
+                    className="rounded-[45px] max-lg:w-fill mx-auto translate-x-6 max-sm:hidden max-m:hidden max-lg:translate-x-0 object-cover"
                 />
             </div>
         </>

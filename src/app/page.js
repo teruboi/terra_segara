@@ -30,7 +30,7 @@ const ourWorks = [
 export default function LandingPage() {
   return (
     <>
-      <div className="max-w-screen max-h-fit aspect-video max-[360px]:h-auto w-screen z-0 relative">
+      <div className="max-w-screen aspect-video max-[360px]:h-auto w-screen z-0 relative">
           <TSImg
             src={'home-hero.png'}
             fill={true}
